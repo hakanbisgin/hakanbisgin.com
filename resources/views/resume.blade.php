@@ -1,12 +1,85 @@
 @extends('theme.theme')
 @section('content')
+
     <div class="grid gap-6 lg:grid-cols-2 lg:gap-8">
 
+        <x-custom.box icon='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF2D20" viewBox="0 0 16 16">
+  <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4"/>
+  <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.97 5.97 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1M2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0M14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0"/>
+</svg>'
+                      content=''>
+            <img src="/me.jpg">
+        </x-custom.box>
+        <x-custom.box icon='<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FF2D20" viewBox="0 0 16 16">
+  <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+  <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+</svg>'>
+            <h2 class="text-xl font-semibold text-black dark:text-white">Work Experience</h2>
+            <p class="mt-4 text-sm/relaxed">
+                <b>
+                    03/2022 – 03/2022 (2 years) <br>
+                    TECHNICAL SUPPORT AND TRAINING SPECIALIST <br>
+                    TAYFTECH - TAYF ADVANCED TECHNOLOGY SERVICES INC.
+                </b>
+            </p>
+            <pre style="text-wrap: wrap" class="text-xs border-b-2">
+Technical presentation of the product to domestic and foreign stakeholders (End user / resellers /
+technical supports).
+Stakeholder training on demos and application scenarios.
+System analysis for stakeholders.
+Evaluation of the product's compatibility with other technologies used by its stakeholders.
+Reporting and monitoring of test processes and results.
+Conventional WAN Accelerators, configuring with usage methodologies.
+Product improvement/development recommendations and tracking.
+Determination of test cases for test scenarios of products.
+Preparation of test scripts suitable for test scenarios.
+Performing tests of products in the product family, such as product conformity tests, compatibility
+tests with products on the market, validation tests for the target market.
+Deployment products for different network topologies and usage scenarios
+            </pre>
+            <p class="mt-4 text-sm/relaxed">
+                <b>
+                    11/10/2019 – 30/04/2022 (2years 7months) <br>
+                    IT SPECIALIST <br>
+                    HARVEST INTERNATIONAL SCHOOLS
+                </b>
+            </p>
+            <pre style="text-wrap: wrap" class="text-xs border-b-2">
+Networking (troubleshooting - Configuring - Maintaining)
+Hardware maintenance (Desktops - Laptops etc.)
+IT Buying operations (Software solutions - New Appliances, Computers etc.) Helpdesk (LMS Softwares - OS - Devices - Windows Server 2012)
+            </pre>
+            <p class="mt-4 text-sm/relaxed">
+                <b>
+                    08/2018 – 10/2018 (Internship 3months) <br>
+                    SOFTWARE TESTING ENGINEER <br>MENTORNITY BILIŞIM A.Ş.
+                </b>
+            </p>
+            <pre style="text-wrap: wrap" class="text-xs border-b-2">
+Defining user stories.
+Acceptance criteria for user stories.
+Manual testing.
+Creating tests for automated tests.
+Web UI/UX test with Selenium, Cucumber and Katalon Studio Worked with Slack, Confluence and trello tools
+            </pre>
+            <p class="mt-4 text-sm/relaxed">
+                <b>
+                    08/2017 – 09/2017 (Internship 2months)<br>
+                    BUSINESS ANALYST <br>
+                    ISTANBUL BEYLIKDUZU MUNICIPALITY <br>
+                </b>
+            </p>
+            <pre style="text-wrap: wrap" class="text-xs border-b-2">
+Worked as a system/business analyst.
+Identifying needs of stakeholders.
+Testing software for acceptance.
+            </pre>
+        </x-custom.box>
 
-        <a
-            href="{{route('resume')}}"
-            id="docs-card"
-            class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
+
+        <a href="{{route('resume')}}"
+           id="docs-card"
+           class="flex flex-col items-start gap-6 overflow-hidden rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] md:row-span-3 lg:p-10 lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
         >
             <div id="screenshot-container" class="relative flex w-full flex-1 items-stretch">
                 <img
@@ -50,21 +123,19 @@
                     <div class="pt-3 sm:pt-5 lg:pt-0">
 
                         <p class="mt-4 text-sm/relaxed">
-                            Interested in PHP/Laravel and MySQL, and a little bit of Linux (More than LPI 201) Graduated
-                            from Computer Engineering with software development skills, had IT and Helpdesk skills at an
+                            Interested in PHP/Laravel and MySQL, and a little bit of Linux (More than LPI 201)
+                            Graduated
+                            from Computer Engineering with software development skills, had IT and Helpdesk skills
+                            at an
                             international schools corporation, Deep dive into TCP/IP stack protocols and network
                             architectures at an ADVANCED TECHNOLOGY SERVICES INC.
                         </p>
                     </div>
                 </div>
-
-                <svg class="size-6 shrink-0 stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none"
-                     viewBox="0 0 24 24" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/>
-                </svg>
             </div>
         </a>
+
+
         <x-custom.box
             icon='<svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                      viewBox="0 0 24 24">
@@ -129,6 +200,7 @@
                     </a>
                 </div>'>
         </x-custom.box>
+
         <a
             {{--           TODO:: href="{{route('blog')}}"--}}
             class="flex items-start gap-4 rounded-lg bg-white p-6 shadow-[0px_14px_34px_0px_rgba(0,0,0,0.08)] ring-1 ring-white/[0.05] transition duration-300 hover:text-black/70 hover:ring-black/20 focus:outline-none focus-visible:ring-[#FF2D20] lg:pb-10 dark:bg-zinc-900 dark:ring-zinc-800 dark:hover:text-white/70 dark:hover:ring-zinc-700 dark:focus-visible:ring-[#FF2D20]"
