@@ -574,6 +574,12 @@ img, video {
     line-height: 1.75rem
 }
 
+.text-7xl {
+    font-size: 4.5rem; /* 72px */
+    line-height: 1;
+}
+
+
 .font-semibold {
     font-weight: 600
 }
