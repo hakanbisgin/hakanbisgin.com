@@ -9,15 +9,11 @@ use Illuminate\View\Component;
 class box extends Component
 {
 
-    public $icon = null;
-    public $content = null;
     /**
      * Create a new component instance.
      */
-    public function __construct($icon = null, $content = null)
+    public function __construct(public $icon = null, public $content = null, public $class = null, public $style = null)
     {
-        $this->icon = $icon;
-        $this->content = $content;
     }
 
     /**
