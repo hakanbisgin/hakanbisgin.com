@@ -10,41 +10,42 @@
                       content=''>
             <img src="/me.jpg">
         </x-custom.box>
-        <x-custom.box icon='<svg fill="#FF2D20" height="24px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 173" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M128.3,56.9c15.2,0,27.4-12.2,27.4-27.4S143.5,2,128.3,2c-15.2,0-27.4,12.2-27.4,27.4C100.9,44.7,113.2,56.9,128.3,56.9z M64.6,136.3H15.3c-16,0-16.9-24.4,0.3-24.4h42.7l24.5-36.1C90,66,98.3,61.3,109.9,61.3h36.5c11.7,0,19.9,4.3,27.1,14.6l24.6,36.1 h43c17.2,0,16.2,24.4,0.6,24.4h-49.3c-3.9,0-8.6-1.4-11.4-5.6l-18.8-26.8l-0.1,67.2H94.8l-0.1-67.2l-18.8,26.8 C73.2,134.9,68.5,136.3,64.6,136.3z M239.8,83.1c-1,1-2.4,1.1-3.3,0.2c-0.5-0.5-0.7-1.3-0.6-2c0,0,1.1-3.2-1.2-5.5 c-2.3-2.3-6.6-1.7-9.6,1.3c-3,3-3.6,7.3-1.3,9.6c1.3,1.3,3.3,1.6,5.3,1.2c0.8-0.2,1.6-0.1,2.2,0.5c0.8,0.8,0.8,2.2,0,3l-9.1,9.1 L192,70.2l9.1-9.1c0.8-0.8,2.2-0.8,3,0c0.5,0.5,0.7,1.1,0.6,1.7c-0.3,2.4-0.3,4.4,1.1,5.9c2.3,2.3,6.6,1.7,9.6-1.3s3.6-7.3,1.3-9.6 c-2.3-2.3-5.3-1.3-5.3-1.3c-0.5,0.2-1.6,0.1-2.2-0.4c-0.8-0.8-0.8-2.2,0-3l10.5-10.5l10.2,10.2l0,0l0,0c0.8,0.8,2.2,0.8,3,0 c0.6-0.6,0.7-1.6,0.5-2.2c-0.4-2.1-0.1-4,1.2-5.4c2.3-2.3,6.8-1.9,10.2,1.8c2.9,3.1,3.9,7.8,1.6,10.1c-1.3,1.3-3.2,1.6-5.4,1.2 c-0.5-0.1-1.6,0-2.2,0.5c-0.8,0.8-0.8,2.2,0,3l0,0l0,0l11.1,11L239.8,83.1z M54.4,58.8c0,3.3-0.8,6-2.5,8.3c-1,1.3-2.8,3.1-5.5,5.2 l-2.7,2.1c-1.5,1.1-2.4,2.5-2.9,4c-0.3,1-0.5,2.5-0.5,4.5H30.1c0.2-4.3,0.6-7.2,1.2-8.8s2.4-3.5,5.1-5.6l2.8-2.2 c0.9-0.7,1.7-1.4,2.2-2.2c1-1.4,1.5-2.9,1.5-4.6c0-1.9-0.6-3.7-1.7-5.2C40,52.5,38,51.7,35,51.7c-2.9,0-5,1-6.2,2.9 c-1.1,1.7-1.7,3.5-1.8,5.4c0,0,0,0.1,0,0.1c0,0.2,0,0.4,0,0.6l0,0l0,0c-0.3,2.8-2.6,4.9-5.5,4.9s-5.2-2.1-5.5-4.9 c0,0,0.1-1.4,0.1-1.8c0.6-6.3,3.1-10.8,7.4-13.6c3-1.9,6.6-2.9,11-2.9c5.7,0,10.5,1.3,14.2,4.1C52.6,49.3,54.4,53.4,54.4,58.8z M28.4,93.4c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1s-3.2-7.1-7.1-7.1S28.4,89.5,28.4,93.4z"></path> </g></svg>'>
+        <x-custom.box
+            icon='<svg fill="#FF2D20" height="24px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 256 173" xml:space="preserve"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g> <path d="M128.3,56.9c15.2,0,27.4-12.2,27.4-27.4S143.5,2,128.3,2c-15.2,0-27.4,12.2-27.4,27.4C100.9,44.7,113.2,56.9,128.3,56.9z M64.6,136.3H15.3c-16,0-16.9-24.4,0.3-24.4h42.7l24.5-36.1C90,66,98.3,61.3,109.9,61.3h36.5c11.7,0,19.9,4.3,27.1,14.6l24.6,36.1 h43c17.2,0,16.2,24.4,0.6,24.4h-49.3c-3.9,0-8.6-1.4-11.4-5.6l-18.8-26.8l-0.1,67.2H94.8l-0.1-67.2l-18.8,26.8 C73.2,134.9,68.5,136.3,64.6,136.3z M239.8,83.1c-1,1-2.4,1.1-3.3,0.2c-0.5-0.5-0.7-1.3-0.6-2c0,0,1.1-3.2-1.2-5.5 c-2.3-2.3-6.6-1.7-9.6,1.3c-3,3-3.6,7.3-1.3,9.6c1.3,1.3,3.3,1.6,5.3,1.2c0.8-0.2,1.6-0.1,2.2,0.5c0.8,0.8,0.8,2.2,0,3l-9.1,9.1 L192,70.2l9.1-9.1c0.8-0.8,2.2-0.8,3,0c0.5,0.5,0.7,1.1,0.6,1.7c-0.3,2.4-0.3,4.4,1.1,5.9c2.3,2.3,6.6,1.7,9.6-1.3s3.6-7.3,1.3-9.6 c-2.3-2.3-5.3-1.3-5.3-1.3c-0.5,0.2-1.6,0.1-2.2-0.4c-0.8-0.8-0.8-2.2,0-3l10.5-10.5l10.2,10.2l0,0l0,0c0.8,0.8,2.2,0.8,3,0 c0.6-0.6,0.7-1.6,0.5-2.2c-0.4-2.1-0.1-4,1.2-5.4c2.3-2.3,6.8-1.9,10.2,1.8c2.9,3.1,3.9,7.8,1.6,10.1c-1.3,1.3-3.2,1.6-5.4,1.2 c-0.5-0.1-1.6,0-2.2,0.5c-0.8,0.8-0.8,2.2,0,3l0,0l0,0l11.1,11L239.8,83.1z M54.4,58.8c0,3.3-0.8,6-2.5,8.3c-1,1.3-2.8,3.1-5.5,5.2 l-2.7,2.1c-1.5,1.1-2.4,2.5-2.9,4c-0.3,1-0.5,2.5-0.5,4.5H30.1c0.2-4.3,0.6-7.2,1.2-8.8s2.4-3.5,5.1-5.6l2.8-2.2 c0.9-0.7,1.7-1.4,2.2-2.2c1-1.4,1.5-2.9,1.5-4.6c0-1.9-0.6-3.7-1.7-5.2C40,52.5,38,51.7,35,51.7c-2.9,0-5,1-6.2,2.9 c-1.1,1.7-1.7,3.5-1.8,5.4c0,0,0,0.1,0,0.1c0,0.2,0,0.4,0,0.6l0,0l0,0c-0.3,2.8-2.6,4.9-5.5,4.9s-5.2-2.1-5.5-4.9 c0,0,0.1-1.4,0.1-1.8c0.6-6.3,3.1-10.8,7.4-13.6c3-1.9,6.6-2.9,11-2.9c5.7,0,10.5,1.3,14.2,4.1C52.6,49.3,54.4,53.4,54.4,58.8z M28.4,93.4c0,3.9,3.2,7.1,7.1,7.1s7.1-3.2,7.1-7.1s-3.2-7.1-7.1-7.1S28.4,89.5,28.4,93.4z"></path> </g></svg>'>
             <h2 class="text-xl font-semibold text-black dark:text-white">Skills</h2>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     Network
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Network design (Firewall, Router, Load Balancer etc.)
-MPLS and VPN circuits, IPSec and Proxy devices
-TCP/IP protocols applications
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Network design (Firewall, Router, Load Balancer etc.)<br>
+                MPLS and VPN circuits, IPSec and Proxy devices<br>
+                TCP/IP protocols applications
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     Development
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Object Oriented Analysis And Design
-PHP - Laravel
-MySQL
-Jenkins
-Selenium
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Object Oriented Analysis And Design<br>
+                PHP - Laravel<br>
+                MySQL<br>
+                Jenkins<br>
+                Selenium<br>
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     System Administration
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-GNU Linux
-VMWARE & ESXi
-Proxmox
-Bash scripting
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                GNU Linux<br>
+                VMWARE & ESXi<br>
+                Proxmox<br>
+                Bash scripting<br>
+            </p>
 
         </x-custom.box>
 
@@ -69,21 +70,21 @@ Bash scripting
                     TAYFTECH - TAYF ADVANCED TECHNOLOGY SERVICES INC.
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Technical presentation of the product to domestic and foreign stakeholders (End user / resellers /
-technical supports).
-Stakeholder training on demos and application scenarios.
-System analysis for stakeholders.
-Evaluation of the product's compatibility with other technologies used by its stakeholders.
-Reporting and monitoring of test processes and results.
-Conventional WAN Accelerators, configuring with usage methodologies.
-Product improvement/development recommendations and tracking.
-Determination of test cases for test scenarios of products.
-Preparation of test scripts suitable for test scenarios.
-Performing tests of products in the product family, such as product conformity tests, compatibility
-tests with products on the market, validation tests for the target market.
-Deployment products for different network topologies and usage scenarios
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Technical presentation of the product to domestic and foreign stakeholders (End user / resellers /
+                technical supports).<br>
+                Stakeholder training on demos and application scenarios.<br>
+                System analysis for stakeholders.<br>
+                Evaluation of the product's compatibility with other technologies used by its stakeholders.<br>
+                Reporting and monitoring of test processes and results.<br>
+                Conventional WAN Accelerators, configuring with usage methodologies.<br>
+                Product improvement/development recommendations and tracking.<br>
+                Determination of test cases for test scenarios of products.<br>
+                Preparation of test scripts suitable for test scenarios.<br>
+                Performing tests of products in the product family, such as product conformity tests, compatibility
+                tests with products on the market, validation tests for the target market.<br>
+                Deployment products for different network topologies and usage scenarios
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     11/10/2019 – 30/04/2022 (2years 7months) <br>
@@ -91,36 +92,38 @@ Deployment products for different network topologies and usage scenarios
                     HARVEST INTERNATIONAL SCHOOLS
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Networking (troubleshooting - Configuring - Maintaining)
-Hardware maintenance (Desktops - Laptops etc.)
-IT Buying operations (Software solutions - New Appliances, Computers etc.) Helpdesk (LMS Softwares - OS - Devices - Windows Server 2012)
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Networking (troubleshooting - Configuring - Maintaining)<br>
+                Hardware maintenance (Desktops - Laptops etc.)<br>
+                IT Buying operations (Software solutions - New Appliances, Computers etc.)<br>
+                Helpdesk (LMS Softwares - OS - Devices - Windows Server 2012)
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     08/2018 – 10/2018 (Internship 3months) <br>
                     SOFTWARE TESTING ENGINEER <br>MENTORNITY BILIŞIM A.Ş.
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Defining user stories.
-Acceptance criteria for user stories.
-Manual testing.
-Creating tests for automated tests.
-Web UI/UX test with Selenium, Cucumber and Katalon Studio Worked with Slack, Confluence and trello tools
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Defining user stories.<br>
+                Acceptance criteria for user stories.<br>
+                Manual testing.<br>
+                Creating tests for automated tests.<br>
+                Web UI/UX test with Selenium, Cucumber and Katalon Studio<br>
+                Worked with Slack, Confluence and trello tools
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     08/2017 – 09/2017 (Internship 2months)<br>
                     BUSINESS ANALYST <br>
-                    ISTANBUL BEYLIKDUZU MUNICIPALITY <br>
+                    ISTANBUL BEYLIKDUZU MUNICIPALITY
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Worked as a system/business analyst.
-Identifying needs of stakeholders.
-Testing software for acceptance.
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Worked as a system/business analyst.<br>
+                Identifying needs of stakeholders.<br>
+                Testing software for acceptance.<br>
+            </p>
         </x-custom.box>
         <x-custom.box icon='<svg class="size-5 sm:size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                 <path fill="#FF2D20" d="M23 4a1 1 0 0 0-1.447-.894L12.224 7.77a.5.5 0 0 1-.448 0L2.447 3.106A1 1 0 0 0 1 4v13.382a1.99 1.99 0 0 0 1.105 1.79l9.448 4.728c.14.065.293.1.447.1.154-.005.306-.04.447-.105l9.453-4.724a1.99 1.99 0 0 0 1.1-1.789V4ZM3 6.023a.25.25 0 0 1 .362-.223l7.5 3.75a.251.251 0 0 1 .138.223v11.2a.25.25 0 0 1-.362.224l-7.5-3.75a.25.25 0 0 1-.138-.22V6.023Zm18 11.2a.25.25 0 0 1-.138.224l-7.5 3.75a.249.249 0 0 1-.329-.099.249.249 0 0 1-.033-.12V9.772a.251.251 0 0 1 .138-.224l7.5-3.75a.25.25 0 0 1 .362.224v11.2Z"></path>
@@ -132,17 +135,17 @@ Testing software for acceptance.
                     Dion Training - Jason Dion
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-COMPTIA NETWORK+ (N10-008) FULL COURSE & PRACTICE EXAM
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                COMPTIA NETWORK+ (N10-008) FULL COURSE & PRACTICE EXAM
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     CSEPracticals - Abhishek
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-MASTER CLASS : TCP/IP EXPERT MECHANICS
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                MASTER CLASS : TCP/IP EXPERT MECHANICS
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     09/2013 – 02/2019 COMPUTER ENGINEERING <br>
@@ -150,47 +153,47 @@ MASTER CLASS : TCP/IP EXPERT MECHANICS
                     Bachelor's degree
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Object Oriented Programming
-Object Oriented Analysis And Design
-Web Page Design and Programming
-Database Management Systems
-Agile Software Development
-System Administration With Linux
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Object Oriented Programming<br>
+                Object Oriented Analysis And Design<br>
+                Web Page Design and Programming<br>
+                Database Management Systems<br>
+                Agile Software Development<br>
+                System Administration With Linux
+            </p>
             <h2 class="text-xl font-semibold text-black dark:text-white mt-4">Projects</h2>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     2018 - Traffic Sign Recognition (Thesis)
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Python
-OpenCV
-XML
-Computer Vision
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Python<br>
+                OpenCV<br>
+                XML<br>
+                Computer Vision
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     2017 - Restaurant Order Management System <br>
                     Project Manager & Developer
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Java
-MySQL
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Java
+                MySQL
+            </p>
             <p class="mt-4 text-sm/relaxed">
                 <b>
                     2015 - Car Rental Management System <br>
                     Developer
                 </b>
             </p>
-            <pre style="text-wrap: wrap" class="text-xs border-b-2">
-Java
-MySQL
-TDD (JUNIT)
-            </pre>
+            <p style="text-wrap: wrap" class="text-xs border-b-2">
+                Java<br>
+                MySQL<br>
+                TDD (JUNIT)
+            </p>
         </x-custom.box>
 
 
