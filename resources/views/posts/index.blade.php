@@ -13,10 +13,10 @@
                 <a href="{{route('posts.create')}}" style=" background: #3e3;padding: .5rem; border-radius: .5rem" class="font-sans">New</a>
                 @foreach($posts as $post)
                     <x-custom.box class="mt-4">
-                        <h2 class="text-xl font-semibold text-black dark:text-white mt-4">{{ $post->title }}</h2>
+                        <h2 class="text-xl font-semibold text-black dark:text-white mt-4">{{ $post->title??'' }}</h2>
                         <p class="mt-4 text-sm/relaxed"
                            style="color: deepskyblue; max-height: 20dvh; min-height: 200px; overflow: scroll; padding: .5rem; border: none !important; margin-bottom: 2rem">
-                            {{ $post->body }}
+                            {!! $post->body??'' !!}
                         </p>
 
                         <a href="{{route('posts.show', $post)}}"
