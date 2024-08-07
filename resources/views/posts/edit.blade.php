@@ -19,7 +19,7 @@
                     @method(isset($id)?'PATCH':'POST')
                     <input type="hidden" name="id" value="{{isset($id)?$id:null}}">
                     <input type="text" name="title" id="title" placeholder="Title" value="{{$title??''}}" style="height: 5rem; font-size: 3rem; width: 100%">
-                    <textarea name="body" id="body"> {{$body??''}}
+                    <textarea name="body" id="body"> {!! $body??'' !!}
                     </textarea>
                     <button type="submit" style="padding: 10px; background: #2563eb; color: #eee; border-radius: 5px;">Submit</button>
                 </form>
