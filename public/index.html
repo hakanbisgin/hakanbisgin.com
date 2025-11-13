@@ -15,7 +15,7 @@
                 <ul class="nav-menu">
                     <li><a href="index.html" class="active" data-i18n="nav.home">Anasayfa</a></li>
                     <li><a href="resume.html" data-i18n="nav.resume">Özgeçmiş</a></li>
-                    <li><a href="projects-static.html" data-i18n="nav.projects">Projeler</a></li>
+                    <li><a href="projects.html" data-i18n="nav.projects">Projeler</a></li>
                 </ul>
                 <button id="lang-toggle" class="lang-toggle" title="Switch to English">EN</button>
             </div>
@@ -25,7 +25,7 @@
     <main class="container">
         <div class="grid">
             <!-- Whois Section -->
-            <div class="card card-large">
+            <a href="resume.html" class="card card-large card-link">
                 <div class="card-image">
                     <img src="me.jpg" alt="Hakan Bişgin">
                 </div>
@@ -39,9 +39,14 @@
                         </div>
                         <h2 data-i18n="home.whois.title">Kimim?</h2>
                     </div>
-                    <p data-i18n="home.whois.content">PHP/Laravel ve MySQL ile ilgilenen, biraz da Linux bilen (LPI 201'den fazla) bir Bilgisayar Mühendisiyim. Uluslararası bir okul şirketinde IT ve Helpdesk becerileri kazandım. İleri teknoloji hizmetleri şirketinde TCP/IP protokolleri ve ağ mimarileri üzerine derinlemesine çalıştım.</p>
+                    <p data-i18n="home.whois.content">Python, PHP/Laravel ve JavaScript ile ilgilenen, Linux sistem yönetimi ve network konularında deneyimli bir Bilgisayar Mühendisiyim. Computer Vision, AI ve otomasyon projeleri geliştiriyorum. Broadcast teknolojileri ve gerçek zamanlı sistemler üzerine çalışıyorum.</p>
+                    <div class="card-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </div>
                 </div>
-            </div>
+            </a>
 
             <!-- Online Links -->
             <div class="card">
@@ -103,7 +108,7 @@
             </div>
 
             <!-- Projects Card -->
-            <a href="projects-static.html" class="card card-link">
+            <div class="card card-large">
                 <div class="card-header">
                     <div class="icon-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -112,13 +117,62 @@
                     </div>
                     <h2 data-i18n="nav.projects">Projeler</h2>
                 </div>
-                <p data-i18n="home.projects.content">GitHub'daki açık kaynak projelerimi ve katkılarımı keşfedin. Laravel, PHP, JavaScript ve daha fazlası...</p>
-                <div class="card-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
+                <p data-i18n="home.projects.content" style="margin-bottom: 1.5rem;">GitHub'daki açık kaynak projelerimi ve katkılarımı keşfedin. Laravel, PHP, JavaScript ve daha fazlası...</p>
+                
+                <div class="featured-projects-list">
+                    <a href="projects.html" class="featured-project-item">
+                        <span class="project-emoji">📺</span>
+                        <div class="project-info">
+                            <h4 data-i18n="projects.livefeeds.title">Live Feeds Monitoring Dashboard</h4>
+                            <div class="project-tags-mini">
+                                <span>#RealTime</span>
+                                <span>#WebSocket</span>
+                                <span>#Monitoring</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="projects.html" class="featured-project-item">
+                        <span class="project-emoji">📈</span>
+                        <div class="project-info">
+                            <h4 data-i18n="projects.tradingbot.title">Automated Trading Bot</h4>
+                            <div class="project-tags-mini">
+                                <span>#Python</span>
+                                <span>#Trading</span>
+                                <span>#Algorithms</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="projects.html" class="featured-project-item">
+                        <span class="project-emoji">👁️</span>
+                        <div class="project-info">
+                            <h4 data-i18n="projects.logodetect.title">Fast Logo Detection System</h4>
+                            <div class="project-tags-mini">
+                                <span>#AI</span>
+                                <span>#OpenCV</span>
+                                <span>#DeepLearning</span>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="projects.html" class="featured-project-item">
+                        <span class="project-emoji">🌐</span>
+                        <div class="project-info">
+                            <h4 data-i18n="projects.portfolio.title">Personal Portfolio Website</h4>
+                            <div class="project-tags-mini">
+                                <span>#HTML5</span>
+                                <span>#CSS3</span>
+                                <span>#JavaScript</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
+                
+                <a href="projects.html" class="view-all-projects" data-i18n="home.projects.viewall">
+                    Tüm Projeleri Görüntüle →
+                </a>
+            </div>
         </div>
     </main>
 

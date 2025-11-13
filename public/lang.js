@@ -8,9 +8,10 @@ const translations = {
         
         // Home page
         'home.whois.title': 'Kimim?',
-        'home.whois.content': 'PHP/Laravel ve MySQL ile ilgilenen, biraz da Linux bilen (LPI 201\'den fazla) bir Bilgisayar Mühendisiyim. Uluslararası bir okul şirketinde IT ve Helpdesk becerileri kazandım. İleri teknoloji hizmetleri şirketinde TCP/IP protokolleri ve ağ mimarileri üzerine derinlemesine çalıştım.',
+        'home.whois.content': 'Python, PHP/Laravel ve JavaScript ile ilgilenen, Linux sistem yönetimi ve network konularında deneyimli bir Bilgisayar Mühendisiyim. Computer Vision, AI ve otomasyon projeleri geliştiriyorum. Broadcast teknolojileri ve gerçek zamanlı sistemler üzerine çalışıyorum.',
         'home.links.title': 'Online Bağlantılar',
         'home.projects.content': 'GitHub\'daki açık kaynak projelerimi ve katkılarımı keşfedin. Laravel, PHP, JavaScript ve daha fazlası...',
+        'home.projects.viewall': 'Tüm Projeleri Görüntüle →',
         
         // Resume page
         'resume.skills.title': 'Yetenekler',
@@ -85,6 +86,21 @@ const translations = {
         'resume.projects.project6.period': '2024',
         'resume.projects.project6.tech': 'Teknolojiler: Python, OpenCV, Deep Learning, CUDA',
         'resume.projects.project6.desc': 'Yayın izleme için gerçek zamanlı logo tespit ve tanıma sistemi',
+        
+        'resume.projects.project7.title': 'Otomatik Trading Botu',
+        'resume.projects.project7.period': '2024',
+        'resume.projects.project7.tech': 'Teknolojiler: Python, Trading Algorithms, API Integration',
+        'resume.projects.project7.desc': 'Çoklu strateji ve risk yönetimi içeren kripto para trading botu',
+        
+        'resume.projects.project8.title': 'Video Analiz ve Timecode Aracı',
+        'resume.projects.project8.period': '2024',
+        'resume.projects.project8.tech': 'Teknolojiler: Python, FFmpeg, Video Processing',
+        'resume.projects.project8.desc': 'Yayın operasyonları için kapsamlı video analiz aracı',
+        
+        'resume.projects.project9.title': 'CNBC-e Log İşleme Sistemi',
+        'resume.projects.project9.period': '2024',
+        'resume.projects.project9.tech': 'Teknolojiler: Python, Data Processing, Automation',
+        'resume.projects.project9.desc': 'Yayın operasyonları için otomatik log işleme ve analiz sistemi',
         
         'resume.contact.title': 'İletişim',
         
@@ -168,9 +184,10 @@ const translations = {
         
         // Home page
         'home.whois.title': 'Who am I?',
-        'home.whois.content': 'Interested in PHP/Laravel and MySQL, and a little bit of Linux (More than LPI 201). Graduated from Computer Engineering with software development skills, had IT and Helpdesk skills at an international schools corporation. Deep dive into TCP/IP stack protocols and network architectures at an ADVANCED TECHNOLOGY SERVICES INC.',
+        'home.whois.content': 'Computer Engineer experienced in Python, PHP/Laravel, and JavaScript, with expertise in Linux system administration and networking. Developing Computer Vision, AI, and automation projects. Working on broadcast technologies and real-time systems.',
         'home.links.title': 'Online Links',
         'home.projects.content': 'Explore my open source projects and contributions on GitHub. Laravel, PHP, JavaScript and more...',
+        'home.projects.viewall': 'View All Projects →',
         
         // Resume page
         'resume.skills.title': 'Skills',
@@ -245,6 +262,21 @@ const translations = {
         'resume.projects.project6.period': '2024',
         'resume.projects.project6.tech': 'Technologies: Python, OpenCV, Deep Learning, CUDA',
         'resume.projects.project6.desc': 'Real-time logo detection and recognition system for broadcast monitoring',
+        
+        'resume.projects.project7.title': 'Automated Trading Bot',
+        'resume.projects.project7.period': '2024',
+        'resume.projects.project7.tech': 'Technologies: Python, Trading Algorithms, API Integration',
+        'resume.projects.project7.desc': 'Cryptocurrency trading bot with multiple strategies and risk management',
+        
+        'resume.projects.project8.title': 'Video Analyzer & Timecode Tool',
+        'resume.projects.project8.period': '2024',
+        'resume.projects.project8.tech': 'Technologies: Python, FFmpeg, Video Processing',
+        'resume.projects.project8.desc': 'Comprehensive video analysis tool for broadcast operations',
+        
+        'resume.projects.project9.title': 'CNBC-e Log Processing System',
+        'resume.projects.project9.period': '2024',
+        'resume.projects.project9.tech': 'Technologies: Python, Data Processing, Automation',
+        'resume.projects.project9.desc': 'Automated log processing and analysis system for broadcast operations',
         
         'resume.contact.title': 'Contact',
         
