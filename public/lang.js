@@ -8,7 +8,7 @@ const translations = {
         
         // Home page
         'home.whois.title': 'Kimim?',
-        'home.whois.content': 'Python, PHP/Laravel ve JavaScript ile ilgilenen, Linux sistem yönetimi ve network konularında deneyimli bir Bilgisayar Mühendisiyim. Computer Vision, AI ve otomasyon projeleri geliştiriyorum. Broadcast teknolojileri ve gerçek zamanlı sistemler üzerine çalışıyorum.',
+        'home.whois.content': 'Kurumsal BT altyapısı, sistem yönetimi ve yazılım geliştirme alanında 5+ yıl deneyime sahip Sistem ve Network Mühendisiyim. Linux, VMware, Fortinet ve full-stack web teknolojilerinde uzmanım. Güvenli, ölçeklenebilir ve yüksek performanslı çözümler sunmak için sistem operasyonları ve yazılım geliştirmeyi birleştirme konusunda yetenekliyim.',
         'home.links.title': 'Online Bağlantılar',
         'home.projects.content': 'GitHub\'daki açık kaynak projelerimi ve katkılarımı keşfedin. Laravel, PHP, JavaScript ve daha fazlası...',
         'home.projects.viewall': 'Tüm Projeleri Görüntüle →',
@@ -37,25 +37,25 @@ const translations = {
         'resume.skills.documentation.content': 'Microsoft Office (Word, Excel, PowerPoint)\nTeknik Raporlama & Dokümantasyon\nProje Yönetimi Dokümantasyonu',
         
         'resume.experience.title': 'İş Deneyimi',
+        'resume.experience.job0.title': 'SİSTEM MÜHENDİSİ',
+        'resume.experience.job0.company': 'CNBC-e',
+        'resume.experience.job0.period': '10/2024 – Günümüz (1 yıl 2 ay)',
+        'resume.experience.job0.content': 'AD operasyonları yönetimi, Fortinet Firewall kuralları oluşturma ve sorun giderme\nVMware vSphere ortamlarının yönetimi\nNode.js, React.js ve MySQL kullanarak full-stack web uygulamaları tasarlama ve dağıtma\nYayın operasyonları için sistem altyapısı yönetimi',
+        
         'resume.experience.job1.title': 'TEKNİK DESTEK VE EĞİTİM UZMANI',
         'resume.experience.job1.company': 'TAYFTECH - TAYF İLERİ TEKNOLOJİ HİZMETLERİ A.Ş.',
-        'resume.experience.job1.period': '03/2022 – 03/2024 (2 yıl)',
-        'resume.experience.job1.content': 'Ürünün yurt içi ve yurt dışı paydaşlara teknik sunumu\nDemo ve uygulama senaryoları üzerine paydaş eğitimleri\nPaydaşlar için sistem analizi\nÜrünün paydaşların kullandığı diğer teknolojilerle uyumluluğunun değerlendirilmesi\nTest süreçlerinin ve sonuçlarının raporlanması ve takibi\nGeleneksel WAN Hızlandırıcıları, kullanım metodolojileri ile yapılandırma\nÜrün iyileştirme/geliştirme önerileri ve takibi\nÜrünlerin test senaryoları için test durumlarının belirlenmesi\nFarklı ağ topolojileri ve kullanım senaryoları için ürün dağıtımı',
+        'resume.experience.job1.period': '03/2022 – 03/2024 (2 yıl 1 ay)',
+        'resume.experience.job1.content': 'Yeni nesil WAN hızlandırma ürünü için ön satış ve network mühendisliği rolü\nYurt içi ve yurt dışı paydaşlara teknik sunumlar ve ürün demoları\nSistem analizleri, mevcut altyapılarla entegrasyon değerlendirmesi\nKarmaşık ağ topolojileri için yapılandırma rehberliği\nPaydaş eğitimleri, test senaryoları hazırlama ve yürütme\nUyumluluk, doğrulama ve performans test sonuçlarının dokümantasyonu\nSaha deneyimine dayalı teknik geri bildirim ile ürün geliştirmeye katkı',
         
         'resume.experience.job2.title': 'BT UZMANI',
         'resume.experience.job2.company': 'HARVEST ULUSLARARASI OKULLARI',
-        'resume.experience.job2.period': '11/10/2019 – 30/04/2022 (2 yıl 7 ay)',
-        'resume.experience.job2.content': 'Ağ yönetimi (sorun giderme - yapılandırma - bakım)\nDonanım bakımı (Masaüstü - Dizüstü vb.)\nBT satın alma işlemleri (Yazılım çözümleri - Yeni cihazlar, bilgisayarlar vb.)\nHelpdesk (LMS Yazılımları - İşletim Sistemleri - Cihazlar - Windows Server 2012)',
+        'resume.experience.job2.period': '10/2019 – 03/2022 (2 yıl 6 ay)',
+        'resume.experience.job2.content': 'Ağ ve sunucu altyapılarının kurulumu ve bakımı, yapılandırma ve sorun giderme\nMasaüstü ve dizüstü bilgisayarlarda donanım bakımı ve onarımı\nYazılım, işletim sistemleri ve cihazlar için kapsamlı son kullanıcı desteği\nYazılım çözümleri ve donanım varlıkları için BT satın alma süreçlerinde görev alma',
         
-        'resume.experience.job3.title': 'YAZILIM TEST MÜHENDİSİ',
-        'resume.experience.job3.company': 'MENTORNITY BİLİŞİM A.Ş.',
-        'resume.experience.job3.period': '08/2018 – 10/2018 (Staj 3 ay)',
-        'resume.experience.job3.content': 'Kullanıcı hikayelerinin tanımlanması\nKullanıcı hikayeleri için kabul kriterleri\nManuel test\nOtomatik testler için test oluşturma\nSelenium, Cucumber ve Katalon Studio ile Web UI/UX testi\nSlack, Confluence ve Trello araçları ile çalışma',
-        
-        'resume.experience.job4.title': 'İŞ ANALİSTİ',
-        'resume.experience.job4.company': 'İSTANBUL BEYLİKDÜZÜ BELEDİYESİ',
-        'resume.experience.job4.period': '08/2017 – 09/2017 (Staj 2 ay)',
-        'resume.experience.job4.content': 'Sistem/iş analisti olarak çalışma\nPaydaşların ihtiyaçlarının belirlenmesi\nKabul için yazılım testi',
+        'resume.experience.job3.title': 'YAZILIM KALİTE GÜVENCESİ MÜHENDİSİ',
+        'resume.experience.job3.company': 'MENTORNITY',
+        'resume.experience.job3.period': '08/2018 – 10/2018 (3 ay)',
+        'resume.experience.job3.content': 'Kullanıcı hikayeleri ve kabul kriterlerinin tanımlanması ile kalite güvence sürecine katkı\nManuel testler gerçekleştirme ve otomatik test senaryoları tasarlama\nSelenium, Cucumber ve Katalon Studio gibi araçlarla UI/UX testi\nSlack, Confluence ve Trello gibi platformlar üzerinden ekip işbirliği',
         
         'resume.education.title': 'Eğitim ve Sertifikalar',
         'resume.education.cert1.title': 'CompTIA Network+ (N10-008)',
@@ -117,6 +117,8 @@ const translations = {
         'resume.projects.project9.desc': 'Yayın operasyonları için otomatik log işleme ve analiz sistemi',
         
         'resume.contact.title': 'İletişim',
+        'resume.print.button': 'CV Yazdır',
+        'resume.print.tooltip': 'Yazdır veya PDF olarak kaydet',
         
         // Projects page
         'projects.title': 'GitHub Projelerim',
@@ -198,7 +200,7 @@ const translations = {
         
         // Home page
         'home.whois.title': 'Who am I?',
-        'home.whois.content': 'Computer Engineer experienced in Python, PHP/Laravel, and JavaScript, with expertise in Linux system administration and networking. Developing Computer Vision, AI, and automation projects. Working on broadcast technologies and real-time systems.',
+        'home.whois.content': 'System and Network Engineer with 5+ years of experience in enterprise IT infrastructure, system administration, and software development. Proficient in Linux, VMware, Fortinet, and full-stack web technologies. Adept at bridging system operations and software development to deliver secure, scalable, and high-performing solutions.',
         'home.links.title': 'Online Links',
         'home.projects.content': 'Explore my open source projects and contributions on GitHub. Laravel, PHP, JavaScript and more...',
         'home.projects.viewall': 'View All Projects →',
@@ -227,25 +229,25 @@ const translations = {
         'resume.skills.documentation.content': 'Microsoft Office (Word, Excel, PowerPoint)\nTechnical Reporting & Documentation\nProject Management Documentation',
         
         'resume.experience.title': 'Work Experience',
+        'resume.experience.job0.title': 'SYSTEM ENGINEER',
+        'resume.experience.job0.company': 'CNBC-e',
+        'resume.experience.job0.period': 'Oct 2024 - Present (1 year 2 months)',
+        'resume.experience.job0.content': 'Managed AD operations, created and troubleshooted Fortinet Firewall rules\nAdministered VMware vSphere environments\nDesigned and deployed full-stack web applications using Node.js, React.js, and MySQL\nManaged system infrastructure for broadcast operations',
+        
         'resume.experience.job1.title': 'TECHNICAL SUPPORT AND TRAINING SPECIALIST',
         'resume.experience.job1.company': 'TAYFTECH - TAYF ADVANCED TECHNOLOGY SERVICES INC.',
-        'resume.experience.job1.period': '03/2022 – 03/2024 (2 years)',
-        'resume.experience.job1.content': 'Technical presentation of the product to domestic and foreign stakeholders (End user / resellers / technical supports)\nStakeholder training on demos and application scenarios\nSystem analysis for stakeholders\nEvaluation of the product\'s compatibility with other technologies used by its stakeholders\nReporting and monitoring of test processes and results\nConventional WAN Accelerators, configuring with usage methodologies\nProduct improvement/development recommendations and tracking\nDetermination of test cases for test scenarios of products\nDeployment products for different network topologies and usage scenarios',
+        'resume.experience.job1.period': 'Mar 2022 - Mar 2024 (2 years 1 month)',
+        'resume.experience.job1.content': 'Served in a pre-sales and network engineering role for a next-generation WAN acceleration product\nDelivered technical presentations and product demonstrations to domestic and international stakeholders\nConducted system analyses, evaluated integration with existing infrastructures\nProvided configuration guidance for complex network topologies\nLed stakeholder training, prepared and executed test scenarios\nDocumented compatibility, validation, and performance test results\nContributed to product improvement by providing technical feedback based on field experience',
         
         'resume.experience.job2.title': 'IT SPECIALIST',
         'resume.experience.job2.company': 'HARVEST INTERNATIONAL SCHOOLS',
-        'resume.experience.job2.period': '11/10/2019 – 30/04/2022 (2 years 7 months)',
-        'resume.experience.job2.content': 'Networking (troubleshooting - Configuring - Maintaining)\nHardware maintenance (Desktops - Laptops etc.)\nIT Buying operations (Software solutions - New Appliances, Computers etc.)\nHelpdesk (LMS Softwares - OS - Devices - Windows Server 2012)',
+        'resume.experience.job2.period': 'Oct 2019 - Mar 2022 (2 years 6 months)',
+        'resume.experience.job2.content': 'Established and maintained network and server infrastructures, including configuration and troubleshooting\nPerformed hardware maintenance and repair on desktops and laptops\nProvided comprehensive end-user support across software, operating systems, and devices\nInvolved in IT procurement processes for software solutions and hardware assets',
         
-        'resume.experience.job3.title': 'SOFTWARE TESTING ENGINEER',
-        'resume.experience.job3.company': 'MENTORNITY INFORMATION TECHNOLOGIES INC.',
-        'resume.experience.job3.period': '08/2018 – 10/2018 (Internship 3 months)',
-        'resume.experience.job3.content': 'Defining user stories\nAcceptance criteria for user stories\nManual testing\nCreating tests for automated tests\nWeb UI/UX test with Selenium, Cucumber and Katalon Studio\nWorked with Slack, Confluence and Trello tools',
-        
-        'resume.experience.job4.title': 'BUSINESS ANALYST',
-        'resume.experience.job4.company': 'ISTANBUL BEYLIKDUZU MUNICIPALITY',
-        'resume.experience.job4.period': '08/2017 – 09/2017 (Internship 2 months)',
-        'resume.experience.job4.content': 'Worked as a system/business analyst\nIdentifying needs of stakeholders\nTesting software for acceptance',
+        'resume.experience.job3.title': 'SOFTWARE QUALITY ASSURANCE ENGINEER',
+        'resume.experience.job3.company': 'MENTORNITY',
+        'resume.experience.job3.period': 'Aug 2018 - Oct 2018 (3 months)',
+        'resume.experience.job3.content': 'Contributed to the quality assurance process by defining user stories and acceptance criteria\nPerformed manual tests and designed automated test cases\nConducted UI/UX testing using tools like Selenium, Cucumber, and Katalon Studio\nCollaborated with the team through platforms such as Slack, Confluence, and Trello',
         
         'resume.education.title': 'Education and Training',
         'resume.education.cert1.title': 'CompTIA Network+ (N10-008)',
@@ -307,6 +309,8 @@ const translations = {
         'resume.projects.project9.desc': 'Automated log processing and analysis system for broadcast operations',
         
         'resume.contact.title': 'Contact',
+        'resume.print.button': 'Print CV',
+        'resume.print.tooltip': 'Print or save as PDF',
         
         // Projects page
         'projects.title': 'My GitHub Projects',

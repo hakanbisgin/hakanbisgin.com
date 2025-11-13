@@ -25,6 +25,15 @@
     </nav>
 
     <main class="container">
+        <div class="print-button-container">
+            <button id="print-cv" class="print-cv-btn" data-i18n-title="resume.print.tooltip">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
+                    <path d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z"/>
+                </svg>
+                <span data-i18n="resume.print.button">CV Yazdır</span>
+            </button>
+        </div>
         <div class="grid resume-grid">
             <!-- Profile Info -->
             <!-- Profile Photo -->
@@ -90,10 +99,19 @@
                 </div>
 
                 <div class="experience-item">
+                    <h3 data-i18n="resume.experience.job0.title">SİSTEM MÜHENDİSİ</h3>
+                    <p class="company" data-i18n="resume.experience.job0.company">CNBC-e</p>
+                    <p class="period" data-i18n="resume.experience.job0.period">10/2024 – Günümüz (1 yıl 2 ay)</p>
+                    <ul>
+                        <li data-i18n="resume.experience.job0.content">AD operasyonları yönetimi, Fortinet Firewall kuralları oluşturma ve sorun giderme</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
                     <h3 data-i18n="resume.experience.job1.title">TEKNİK DESTEK VE EĞİTİM UZMANI</h3>
                     <p class="company" data-i18n="resume.experience.job1.company">TAYFTECH - TAYF İLERİ TEKNOLOJİ
                         HİZMETLERİ A.Ş.</p>
-                    <p class="period" data-i18n="resume.experience.job1.period">03/2022 – 03/2024 (2 yıl)</p>
+                    <p class="period" data-i18n="resume.experience.job1.period">03/2022 – 03/2024 (2 yıl 1 ay)</p>
                     <ul>
                         <li data-i18n="resume.experience.job1.content">Ürünün yurt içi ve yurt dışı paydaşlara teknik
                             sunumu</li>
@@ -103,7 +121,7 @@
                 <div class="experience-item">
                     <h3 data-i18n="resume.experience.job2.title">BT UZMANI</h3>
                     <p class="company" data-i18n="resume.experience.job2.company">HARVEST ULUSLARARASI OKULLARI</p>
-                    <p class="period" data-i18n="resume.experience.job2.period">11/10/2019 – 30/04/2022 (2 yıl 7 ay)</p>
+                    <p class="period" data-i18n="resume.experience.job2.period">10/2019 – 03/2022 (2 yıl 6 ay)</p>
                     <ul>
                         <li data-i18n="resume.experience.job2.content">Ağ yönetimi (sorun giderme - yapılandırma -
                             bakım)</li>
@@ -111,20 +129,11 @@
                 </div>
 
                 <div class="experience-item">
-                    <h3 data-i18n="resume.experience.job3.title">YAZILIM TEST MÜHENDİSİ</h3>
-                    <p class="company" data-i18n="resume.experience.job3.company">MENTORNITY BİLİŞİM A.Ş.</p>
-                    <p class="period" data-i18n="resume.experience.job3.period">08/2018 – 10/2018 (Staj 3 ay)</p>
+                    <h3 data-i18n="resume.experience.job3.title">YAZILIM KALİTE GÜVENCESİ MÜHENDİSİ</h3>
+                    <p class="company" data-i18n="resume.experience.job3.company">MENTORNITY</p>
+                    <p class="period" data-i18n="resume.experience.job3.period">08/2018 – 10/2018 (3 ay)</p>
                     <ul>
                         <li data-i18n="resume.experience.job3.content">Kullanıcı hikayelerinin tanımlanması</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <h3 data-i18n="resume.experience.job4.title">İŞ ANALİSTİ</h3>
-                    <p class="company" data-i18n="resume.experience.job4.company">İSTANBUL BEYLİKDÜZÜ BELEDİYESİ</p>
-                    <p class="period" data-i18n="resume.experience.job4.period">08/2017 – 09/2017 (Staj 2 ay)</p>
-                    <ul>
-                        <li data-i18n="resume.experience.job4.content">Sistem/iş analisti olarak çalışma</li>
                     </ul>
                 </div>
             </div>
@@ -259,6 +268,17 @@
     </footer>
 
     <script src="lang.js"></script>
+    <script>
+        // Print CV functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const printBtn = document.getElementById('print-cv');
+            if (printBtn) {
+                printBtn.addEventListener('click', () => {
+                    window.print();
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>
