@@ -4,11 +4,13 @@ const translations = {
         // Navigation
         'nav.home': 'Anasayfa',
         'nav.resume': 'Özgeçmiş',
+        'nav.projects': 'Projeler',
         
         // Home page
         'home.whois.title': 'Kimim?',
         'home.whois.content': 'PHP/Laravel ve MySQL ile ilgilenen, biraz da Linux bilen (LPI 201\'den fazla) bir Bilgisayar Mühendisiyim. Uluslararası bir okul şirketinde IT ve Helpdesk becerileri kazandım. İleri teknoloji hizmetleri şirketinde TCP/IP protokolleri ve ağ mimarileri üzerine derinlemesine çalıştım.',
         'home.links.title': 'Online Bağlantılar',
+        'home.projects.content': 'GitHub\'daki açık kaynak projelerimi ve katkılarımı keşfedin. Laravel, PHP, JavaScript ve daha fazlası...',
         
         // Resume page
         'resume.skills.title': 'Yetenekler',
@@ -71,6 +73,18 @@ const translations = {
         
         'resume.contact.title': 'İletişim',
         
+        // Projects page
+        'projects.title': 'GitHub Projelerim',
+        'projects.subtitle': 'Açık kaynak projelerim ve katkılarım',
+        'projects.loading': 'Projeler yükleniyor...',
+        'projects.error.title': 'Projeler yüklenemedi',
+        'projects.error.message': 'GitHub API\'sine bağlanırken bir hata oluştu.',
+        'projects.error.retry': 'Tekrar Dene',
+        'projects.stats.repos': 'Toplam Repo',
+        'projects.stats.stars': 'Toplam Yıldız',
+        'projects.stats.forks': 'Toplam Fork',
+        'projects.stats.languages': 'Dil Çeşidi',
+        
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. Tüm hakları saklıdır.'
     },
@@ -78,11 +92,13 @@ const translations = {
         // Navigation
         'nav.home': 'Home',
         'nav.resume': 'Resume',
+        'nav.projects': 'Projects',
         
         // Home page
         'home.whois.title': 'Who am I?',
         'home.whois.content': 'Interested in PHP/Laravel and MySQL, and a little bit of Linux (More than LPI 201). Graduated from Computer Engineering with software development skills, had IT and Helpdesk skills at an international schools corporation. Deep dive into TCP/IP stack protocols and network architectures at an ADVANCED TECHNOLOGY SERVICES INC.',
         'home.links.title': 'Online Links',
+        'home.projects.content': 'Explore my open source projects and contributions on GitHub. Laravel, PHP, JavaScript and more...',
         
         // Resume page
         'resume.skills.title': 'Skills',
@@ -144,6 +160,18 @@ const translations = {
         'resume.projects.project3.tech': 'Technologies: Java, MySQL, TDD (JUNIT)',
         
         'resume.contact.title': 'Contact',
+        
+        // Projects page
+        'projects.title': 'My GitHub Projects',
+        'projects.subtitle': 'Open source projects and contributions',
+        'projects.loading': 'Loading projects...',
+        'projects.error.title': 'Failed to load projects',
+        'projects.error.message': 'An error occurred while connecting to GitHub API.',
+        'projects.error.retry': 'Try Again',
+        'projects.stats.repos': 'Total Repos',
+        'projects.stats.stars': 'Total Stars',
+        'projects.stats.forks': 'Total Forks',
+        'projects.stats.languages': 'Languages',
         
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. All rights reserved.'

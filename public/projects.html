@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeler - Hakan Bişgin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Hakan Bişgin</div>
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav.home">Anasayfa</a></li>
+                    <li><a href="resume.html" data-i18n="nav.resume">Özgeçmiş</a></li>
+                    <li><a href="projects.html" class="active" data-i18n="nav.projects">Projeler</a></li>
+                </ul>
+                <button id="lang-toggle" class="lang-toggle" title="Switch to English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="projects-header">
+            <h1 data-i18n="projects.title">GitHub Projelerim</h1>
+            <p data-i18n="projects.subtitle">Açık kaynak projelerim ve katkılarım</p>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading-state">
+            <div class="spinner"></div>
+            <p data-i18n="projects.loading">Projeler yükleniyor...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="error-state" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            <h3 data-i18n="projects.error.title">Projeler yüklenemedi</h3>
+            <p data-i18n="projects.error.message">GitHub API'sine bağlanırken bir hata oluştu.</p>
+            <button onclick="loadProjects()" class="retry-button" data-i18n="projects.error.retry">Tekrar Dene</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projects-grid" class="projects-grid" style="display: none;">
+            <!-- Projects will be loaded here dynamically -->
+        </div>
+
+        <!-- Stats Section -->
+        <div id="github-stats" class="github-stats" style="display: none;">
+            <div class="stat-card">
+                <div class="stat-icon">📦</div>
+                <div class="stat-value" id="total-repos">0</div>
+                <div class="stat-label" data-i18n="projects.stats.repos">Toplam Repo</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-value" id="total-stars">0</div>
+                <div class="stat-label" data-i18n="projects.stats.stars">Toplam Yıldız</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔱</div>
+                <div class="stat-value" id="total-forks">0</div>
+                <div class="stat-label" data-i18n="projects.stats.forks">Toplam Fork</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💻</div>
+                <div class="stat-value" id="total-languages">0</div>
+                <div class="stat-label" data-i18n="projects.stats.languages">Dil Çeşidi</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer.copyright">&copy; 2024 Hakan Bişgin. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    
+    <script src="lang.js"></script>
+    <script src="projects.js"></script>
+</body>
+</html>
