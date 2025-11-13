@@ -5,7 +5,7 @@ Projeler sayfanız artık tamamen statik ve özelleştirilmiş!
 ## ✅ Tamamlanan İşlemler
 
 ### Yeni Dosya
-- ✅ `public/projects-static.html` - Statik projeler sayfası
+- ✅ `public/projects.html` - Statik projeler sayfası
 
 ### Güncellenen Dosyalar
 - ✅ `public/index.html` - Link güncellendi
@@ -151,7 +151,7 @@ Tüm içerik Türkçe/İngilizce:
 
 ### Yeni Proje Ekleme
 
-`projects-static.html` dosyasına yeni kart ekleyin:
+`projects.html` dosyasına yeni kart ekleyin:
 
 ```html
 <div class="static-project-card">
@@ -240,7 +240,7 @@ Yeni teknoloji rengi eklemek için `style.css`:
 
 ## 🚀 Test
 
-**Test URL**: http://localhost:8000/projects-static.html
+**Test URL**: http://localhost:8000/projects.html
 
 ### Test Checklist
 - [ ] Tüm projeler görünüyor
@@ -319,10 +319,7 @@ Her proje için anlamlı ikon seçin:
 
 ## 📝 Notlar
 
-- Eski `projects.html` dosyası GitHub API kullanıyor
-- Yeni `projects-static.html` tamamen statik
-- İkisi de çalışır durumda
-- Statik versiyon önerilir
+- Eski `projects.html` dosyası projeleri listeler.
 
 ## 🎉 Sonuç
 

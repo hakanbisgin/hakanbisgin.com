@@ -17,9 +17,9 @@ const translations = {
         'resume.skills.network': 'Network',
         'resume.skills.network.content': 'Network tasarımı (Firewall, Router, Load Balancer vb.)\nMPLS ve VPN devreleri, IPSec ve Proxy cihazları\nTCP/IP protokol uygulamaları',
         'resume.skills.development': 'Yazılım Geliştirme',
-        'resume.skills.development.content': 'Nesne Yönelimli Analiz ve Tasarım\nPHP - Laravel\nMySQL\nJenkins\nSelenium',
+        'resume.skills.development.content': 'Nesne Yönelimli Analiz ve Tasarım\nPHP - Laravel\nPython - OpenCV, CUDA\nJavaScript - HTML5, CSS3\nMySQL, PostgreSQL\nJenkins, Selenium\nGit, Docker',
         'resume.skills.sysadmin': 'Sistem Yönetimi',
-        'resume.skills.sysadmin.content': 'GNU Linux\nVMWARE & ESXi\nProxmox\nBash scripting',
+        'resume.skills.sysadmin.content': 'GNU Linux\nVMWARE & ESXi\nProxmox\nBash scripting\nNetwork Monitoring\nAutomation Tools',
         
         'resume.experience.title': 'İş Deneyimi',
         'resume.experience.job1.title': 'TEKNİK DESTEK VE EĞİTİM UZMANI',
@@ -70,6 +70,21 @@ const translations = {
         'resume.projects.project3.period': '2015',
         'resume.projects.project3.role': 'Rol: Geliştirici',
         'resume.projects.project3.tech': 'Teknolojiler: Java, MySQL, TDD (JUNIT)',
+        
+        'resume.projects.project4.title': 'Kişisel Portfolio Web Sitesi',
+        'resume.projects.project4.period': '2024',
+        'resume.projects.project4.tech': 'Teknolojiler: HTML5, CSS3, JavaScript, Responsive Design',
+        'resume.projects.project4.desc': 'Çoklu dil desteği ve modern tasarım ile responsive portfolio sitesi',
+        
+        'resume.projects.project5.title': 'Canlı Yayın İzleme Paneli',
+        'resume.projects.project5.period': '2024',
+        'resume.projects.project5.tech': 'Teknolojiler: JavaScript, WebSocket, Real-time Monitoring',
+        'resume.projects.project5.desc': 'Gerçek zamanlı yayın izleme ve uyarı sistemi',
+        
+        'resume.projects.project6.title': 'Logo Tespit Sistemi',
+        'resume.projects.project6.period': '2024',
+        'resume.projects.project6.tech': 'Teknolojiler: Python, OpenCV, Deep Learning, CUDA',
+        'resume.projects.project6.desc': 'Yayın izleme için gerçek zamanlı logo tespit ve tanıma sistemi',
         
         'resume.contact.title': 'İletişim',
         
@@ -162,9 +177,9 @@ const translations = {
         'resume.skills.network': 'Network',
         'resume.skills.network.content': 'Network design (Firewall, Router, Load Balancer etc.)\nMPLS and VPN circuits, IPSec and Proxy devices\nTCP/IP protocols applications',
         'resume.skills.development': 'Development',
-        'resume.skills.development.content': 'Object Oriented Analysis And Design\nPHP - Laravel\nMySQL\nJenkins\nSelenium',
+        'resume.skills.development.content': 'Object Oriented Analysis And Design\nPHP - Laravel\nPython - OpenCV, CUDA\nJavaScript - HTML5, CSS3\nMySQL, PostgreSQL\nJenkins, Selenium\nGit, Docker',
         'resume.skills.sysadmin': 'System Administration',
-        'resume.skills.sysadmin.content': 'GNU Linux\nVMWARE & ESXi\nProxmox\nBash scripting',
+        'resume.skills.sysadmin.content': 'GNU Linux\nVMWARE & ESXi\nProxmox\nBash scripting\nNetwork Monitoring\nAutomation Tools',
         
         'resume.experience.title': 'Work Experience',
         'resume.experience.job1.title': 'TECHNICAL SUPPORT AND TRAINING SPECIALIST',
@@ -215,6 +230,21 @@ const translations = {
         'resume.projects.project3.period': '2015',
         'resume.projects.project3.role': 'Role: Developer',
         'resume.projects.project3.tech': 'Technologies: Java, MySQL, TDD (JUNIT)',
+        
+        'resume.projects.project4.title': 'Personal Portfolio Website',
+        'resume.projects.project4.period': '2024',
+        'resume.projects.project4.tech': 'Technologies: HTML5, CSS3, JavaScript, Responsive Design',
+        'resume.projects.project4.desc': 'Responsive portfolio website with multi-language support and modern design',
+        
+        'resume.projects.project5.title': 'Live Feeds Monitoring Dashboard',
+        'resume.projects.project5.period': '2024',
+        'resume.projects.project5.tech': 'Technologies: JavaScript, WebSocket, Real-time Monitoring',
+        'resume.projects.project5.desc': 'Real-time broadcast monitoring and alert system',
+        
+        'resume.projects.project6.title': 'Logo Detection System',
+        'resume.projects.project6.period': '2024',
+        'resume.projects.project6.tech': 'Technologies: Python, OpenCV, Deep Learning, CUDA',
+        'resume.projects.project6.desc': 'Real-time logo detection and recognition system for broadcast monitoring',
         
         'resume.contact.title': 'Contact',
         
