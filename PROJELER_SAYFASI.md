@@ -254,11 +254,11 @@ Projeler sayfası Türkçe/İngilizce dil desteğine sahip:
 ```javascript
 // Türkçe
 'projects.title': 'GitHub Projelerim'
-'projects.subtitle': 'Açık kaynak projelerim ve katkılarım'
+'projects.subtitle': 'Projelerim ve katkılarım'
 
 // İngilizce
 'projects.title': 'My GitHub Projects'
-'projects.subtitle': 'Open source projects and contributions'
+'projects.subtitle': 'Projects and contributions'
 ```
 
 ## 📱 Responsive Tasarım
