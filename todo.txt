@@ -22,3 +22,25 @@
    - Print-friendly CSS stilleri eklendi
    - Çoklu dil desteği ile buton metinleri
    - PDF olarak kaydetme özelliği (tarayıcı üzerinden)
+
+
+
+4. ✅ Günümüz olan iş deneyiminin süresi dinamik hesaplanıyor
+   - JavaScript ile otomatik süre hesaplama eklendi
+   - Dil değişikliğinde de güncelleniyor
+   - Yıl ve ay olarak gösteriliyor
+
+5. ✅ CV yazdırma optimize edildi
+   - A4 sayfa formatı ayarlandı
+   - Gereksiz page-break'ler kaldırıldı
+   - Daha kompakt ve profesyonel düzen
+   - Font boyutları optimize edildi
+   - Bölümler mantıklı şekilde gruplandırıldı
+   - URL'ler temiz görünüm için gizlendi
+
+6. ✅ CV yazdırma düzeni iyileştirildi
+   - İlk sayfa yerleşimi düzeltildi
+   - Profil fotoğrafı 100px'den 150px'e büyütüldü (50% artış)
+   - Tüm page-break'ler kaldırıldı (doğal akış)
+   - Profil kartı daha geniş ve okunabilir
+   - Bölümler arası boşluklar optimize edildi

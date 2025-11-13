@@ -1666,9 +1666,16 @@ footer {
 
 /* Print Styles */
 @media print {
+    @page {
+        margin: 1.5cm;
+        size: A4;
+    }
+    
     body {
-        background: white;
-        color: black;
+        background: white !important;
+        color: black !important;
+        font-size: 11pt;
+        line-height: 1.4;
     }
     
     .navbar,
@@ -1681,45 +1688,7 @@ footer {
     .container {
         max-width: 100%;
         padding: 0;
-    }
-    
-    .card {
-        background: white;
-        border: 1px solid #ddd;
-        box-shadow: none;
-        page-break-inside: avoid;
-        margin-bottom: 1rem;
-    }
-    
-    .card-header h2 {
-        color: #333;
-        border-bottom: 2px solid #035dd7;
-        padding-bottom: 0.5rem;
-    }
-    
-    .profile-photo img {
-        border: 2px solid #035dd7;
-    }
-    
-    .experience-item,
-    .education-item,
-    .project-item {
-        page-break-inside: avoid;
-    }
-    
-    .contact-links a {
-        color: #035dd7;
-    }
-    
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-    
-    a[href]:after {
-        content: " (" attr(href) ")";
-        font-size: 0.8em;
-        color: #666;
+        margin: 0;
     }
     
     .resume-grid {
@@ -1727,7 +1696,157 @@ footer {
     }
     
     .card {
+        background: white !important;
+        border: none;
+        box-shadow: none;
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .card-header {
+        margin-bottom: 0.5rem;
+    }
+    
+    .card-header h2 {
+        color: #035dd7 !important;
+        border-bottom: 2px solid #035dd7;
+        padding-bottom: 0.3rem;
+        font-size: 14pt;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Profile section - keep together */
+    .profile-card {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        align-items: flex-start;
+        margin-bottom: 1.2rem;
+        padding: 1rem !important;
+    }
+    
+    .profile-photo {
+        flex-shrink: 0;
+    }
+    
+    .profile-photo img {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #035dd7;
+    }
+    
+    .profile-info {
+        flex: 1;
+    }
+    
+    .profile-info .nav-brand {
+        font-size: 20pt;
+        color: #035dd7 !important;
+        margin-bottom: 0.3rem;
+    }
+    
+    .profile-info h3 {
+        font-size: 10pt;
+        color: #666 !important;
+        margin: 0.3rem 0;
+        font-weight: normal;
+    }
+    
+    .profile-bio {
+        font-size: 10pt;
+        color: #333 !important;
+        line-height: 1.5;
+        margin-top: 0.5rem;
+    }
+    
+    /* Skills section - compact layout */
+    .skills-section {
+        margin-bottom: 0.6rem;
+    }
+    
+    .skills-section h3 {
+        font-size: 11pt;
+        color: #333 !important;
+        margin-bottom: 0.2rem;
+    }
+    
+    .skills-section p {
+        font-size: 10pt;
+        color: #555 !important;
+        margin-left: 1.5rem;
+    }
+    
+    /* Experience, Education, Projects */
+    .experience-item,
+    .education-item,
+    .project-item {
+        margin-bottom: 0.8rem;
+    }
+    
+    .experience-item h3,
+    .education-item h3,
+    .project-item h3 {
+        font-size: 11pt;
+        color: #333 !important;
+        margin-bottom: 0.2rem;
+    }
+    
+    .company,
+    .period {
+        font-size: 10pt;
+        color: #666 !important;
+        margin: 0.1rem 0;
+    }
+    
+    .experience-item ul,
+    .education-item ul,
+    .project-item ul {
+        margin-left: 1.2rem;
+        margin-top: 0.3rem;
+    }
+    
+    .experience-item li,
+    .education-item li,
+    .project-item li {
+        font-size: 10pt;
+        color: #444 !important;
+        margin-bottom: 0.2rem;
+    }
+    
+    /* Contact links */
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .contact-links a {
+        color: #035dd7 !important;
+        text-decoration: none;
+        font-size: 10pt;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    
+    .contact-links svg {
+        width: 14px;
+        height: 14px;
+    }
+    
+    /* Remove href display for cleaner look */
+    a[href]:after {
+        content: none !important;
+    }
+    
+    /* Optimize space usage */
+    .card-full,
+    .card-full-minus-1 {
         width: 100%;
-        margin-bottom: 1rem;
+    }
+    
+    /* Better spacing between sections */
+    .card + .card {
+        margin-top: 0.5rem;
     }
 }

@@ -269,8 +269,64 @@
 
     <script src="lang.js"></script>
     <script>
+        // Calculate duration from start date to now
+        function calculateDuration(startDate) {
+            const start = new Date(startDate);
+            const now = new Date();
+            
+            let years = now.getFullYear() - start.getFullYear();
+            let months = now.getMonth() - start.getMonth();
+            
+            if (months < 0) {
+                years--;
+                months += 12;
+            }
+            
+            return { years, months };
+        }
+
+        // Format duration text
+        function formatDuration(years, months, lang) {
+            const parts = [];
+            
+            if (years > 0) {
+                parts.push(lang === 'tr' ? `${years} yıl` : `${years} year${years > 1 ? 's' : ''}`);
+            }
+            if (months > 0) {
+                parts.push(lang === 'tr' ? `${months} ay` : `${months} month${months > 1 ? 's' : ''}`);
+            }
+            
+            return parts.join(' ');
+        }
+
+        // Update current job duration
+        function updateCurrentJobDuration() {
+            const lang = localStorage.getItem('language') || 'tr';
+            const duration = calculateDuration('2024-10-01');
+            const durationText = formatDuration(duration.years, duration.months, lang);
+            
+            // Update the period text
+            const periodElement = document.querySelector('[data-i18n="resume.experience.job0.period"]');
+            if (periodElement) {
+                const presentText = lang === 'tr' ? 'Günümüz' : 'Present';
+                const startText = lang === 'tr' ? '10/2024' : 'Oct 2024';
+                periodElement.textContent = `${startText} – ${presentText} (${durationText})`;
+            }
+        }
+
         // Print CV functionality
         document.addEventListener('DOMContentLoaded', () => {
+            // Update duration on page load
+            updateCurrentJobDuration();
+            
+            // Update duration when language changes
+            const langToggle = document.getElementById('lang-toggle');
+            if (langToggle) {
+                langToggle.addEventListener('click', () => {
+                    setTimeout(updateCurrentJobDuration, 100);
+                });
+            }
+            
             const printBtn = document.getElementById('print-cv');
             if (printBtn) {
                 printBtn.addEventListener('click', () => {
