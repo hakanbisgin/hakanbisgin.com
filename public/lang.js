@@ -84,6 +84,16 @@ const translations = {
         'projects.stats.stars': 'Toplam Yıldız',
         'projects.stats.forks': 'Toplam Fork',
         'projects.stats.languages': 'Dil Çeşidi',
+        'projects.filter.all': 'Tümü',
+        'projects.filter.featured': 'Öne Çıkanlar',
+        'projects.filter.web': 'Web',
+        'projects.filter.backend': 'Backend',
+        'projects.filter.tools': 'Araçlar',
+        'projects.viewDemo': 'Demo Görüntüle',
+        'projects.viewCode': 'Kodu Görüntüle',
+        'projects.features': 'Özellikler:',
+        'projects.technologies': 'Teknolojiler:',
+        'projects.noResults': 'Proje bulunamadı',
         
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. Tüm hakları saklıdır.'
@@ -172,6 +182,16 @@ const translations = {
         'projects.stats.stars': 'Total Stars',
         'projects.stats.forks': 'Total Forks',
         'projects.stats.languages': 'Languages',
+        'projects.filter.all': 'All',
+        'projects.filter.featured': 'Featured',
+        'projects.filter.web': 'Web',
+        'projects.filter.backend': 'Backend',
+        'projects.filter.tools': 'Tools',
+        'projects.viewDemo': 'View Demo',
+        'projects.viewCode': 'View Code',
+        'projects.features': 'Features:',
+        'projects.technologies': 'Technologies:',
+        'projects.noResults': 'No projects found',
         
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. All rights reserved.'

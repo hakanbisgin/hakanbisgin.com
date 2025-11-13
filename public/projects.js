@@ -25,17 +25,42 @@ const languageColors = {
     'Blade': '#f7523f'
 };
 
-// Featured projects (will be shown first)
-const featuredProjects = [
-    'hakanbisgin.com',
-    'laravel-project',
-    'portfolio'
-];
+// Current filter
+let currentFilter = 'all';
+let allRepos = [];
 
 // Load projects on page load
 document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
+    setupFilters();
 });
+
+function setupFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active state
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // Filter projects
+            currentFilter = btn.dataset.filter;
+            filterProjects();
+        });
+    });
+}
+
+function filterProjects() {
+    if (currentFilter === 'all') {
+        displayProjects(allRepos);
+    } else if (currentFilter === 'featured') {
+        const featured = allRepos.filter(repo => isFeaturedProject(repo.name));
+        displayProjects(featured);
+    } else {
+        const filtered = allRepos.filter(repo => categorizeProject(repo) === currentFilter);
+        displayProjects(filtered);
+    }
+}
 
 async function loadProjects() {
     const loading = document.getElementById('loading');
@@ -60,12 +85,12 @@ async function loadProjects() {
         const repos = await response.json();
         
         // Filter out forks and sort
-        const myRepos = repos.filter(repo => !repo.fork);
+        allRepos = repos.filter(repo => !repo.fork);
         
         // Sort: featured first, then by stars, then by updated date
-        myRepos.sort((a, b) => {
-            const aFeatured = featuredProjects.includes(a.name);
-            const bFeatured = featuredProjects.includes(b.name);
+        allRepos.sort((a, b) => {
+            const aFeatured = isFeaturedProject(a.name);
+            const bFeatured = isFeaturedProject(b.name);
             
             if (aFeatured && !bFeatured) return -1;
             if (!aFeatured && bFeatured) return 1;
@@ -76,11 +101,11 @@ async function loadProjects() {
         });
 
         // Calculate stats
-        const stats = calculateStats(myRepos);
+        const stats = calculateStats(allRepos);
         displayStats(stats);
 
         // Display projects
-        displayProjects(myRepos);
+        displayProjects(allRepos);
 
         // Hide loading, show content
         loading.style.display = 'none';
@@ -124,6 +149,11 @@ function displayProjects(repos) {
     const projectsGrid = document.getElementById('projects-grid');
     projectsGrid.innerHTML = '';
 
+    if (repos.length === 0) {
+        projectsGrid.innerHTML = '<div class="no-projects"><p data-i18n="projects.noResults">No projects found</p></div>';
+        return;
+    }
+
     repos.forEach(repo => {
         const projectCard = createProjectCard(repo);
         projectsGrid.appendChild(projectCard);
@@ -132,76 +162,142 @@ function displayProjects(repos) {
 
 function createProjectCard(repo) {
     const card = document.createElement('div');
-    card.className = 'project-card';
+    const details = getProjectDetails(repo.name);
+    const isFeatured = details !== null;
     
-    // Check if featured
-    const isFeatured = featuredProjects.includes(repo.name);
+    // Get current language from localStorage
+    const currentLang = localStorage.getItem('language') || 'tr';
+    
     if (isFeatured) {
-        card.classList.add('featured');
-    }
-
-    // Language color
-    const langColor = languageColors[repo.language] || '#858585';
-
-    card.innerHTML = `
-        ${isFeatured ? '<div class="featured-badge">⭐ Featured</div>' : ''}
+        // Featured project with full details
+        card.className = 'project-card featured-project';
         
-        <div class="project-header">
-            <div class="project-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                </svg>
+        const title = currentLang === 'tr' ? details.titleTr : details.title;
+        const description = currentLang === 'tr' ? details.descriptionTr : details.description;
+        const features = currentLang === 'tr' ? details.featuresTr : details.features;
+        const tags = currentLang === 'tr' ? details.tagsTr : details.tags;
+        
+        card.innerHTML = `
+            <div class="project-image">
+                <img src="${details.image}" alt="${title}" onerror="this.src='${getPlaceholderImage(repo.language)}'">
+                <div class="project-overlay">
+                    <div class="project-links">
+                        ${details.demo ? `<a href="${details.demo}" target="_blank" class="btn-demo" data-i18n="projects.viewDemo">View Demo</a>` : ''}
+                        <a href="${repo.html_url}" target="_blank" class="btn-code" data-i18n="projects.viewCode">View Code</a>
+                    </div>
+                </div>
             </div>
-            <h3 class="project-name">
-                <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
-                    ${repo.name}
-                </a>
-            </h3>
-        </div>
-
-        <p class="project-description">
-            ${repo.description || '<em>No description available</em>'}
-        </p>
-
-        <div class="project-meta">
-            ${repo.language ? `
-                <div class="project-language">
-                    <span class="language-dot" style="background-color: ${langColor}"></span>
-                    ${repo.language}
-                </div>
-            ` : ''}
             
-            ${repo.stargazers_count > 0 ? `
-                <div class="project-stat">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                    </svg>
-                    ${repo.stargazers_count}
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-title">${title}</h3>
+                    <div class="project-meta-inline">
+                        ${repo.stargazers_count > 0 ? `
+                            <span class="meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                </svg>
+                                ${repo.stargazers_count}
+                            </span>
+                        ` : ''}
+                        ${repo.forks_count > 0 ? `
+                            <span class="meta-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M5 3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm0 2.122a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878zm3.75 7.378a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm3-8.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
+                                </svg>
+                                ${repo.forks_count}
+                            </span>
+                        ` : ''}
+                    </div>
                 </div>
-            ` : ''}
+                
+                <p class="project-description">${description}</p>
+                
+                ${features && features.length > 0 ? `
+                    <div class="project-features">
+                        <h4 data-i18n="projects.features">Features:</h4>
+                        <ul>
+                            ${features.map(f => `<li>${f}</li>`).join('')}
+                        </ul>
+                    </div>
+                ` : ''}
+                
+                <div class="project-tags">
+                    ${tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                </div>
+                
+                ${details.technologies && details.technologies.length > 0 ? `
+                    <div class="project-tech">
+                        <span class="tech-label" data-i18n="projects.technologies">Technologies:</span>
+                        ${details.technologies.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
+                    </div>
+                ` : ''}
+            </div>
+        `;
+    } else {
+        // Regular project card
+        card.className = 'project-card';
+        const langColor = languageColors[repo.language] || '#858585';
+        
+        card.innerHTML = `
+            <div class="project-simple-image">
+                <img src="${getPlaceholderImage(repo.language)}" alt="${repo.name}">
+            </div>
             
-            ${repo.forks_count > 0 ? `
-                <div class="project-stat">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M5 3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm0 2.122a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878zm3.75 7.378a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm3-8.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
-                    </svg>
-                    ${repo.forks_count}
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">
+                        <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">
+                            ${repo.name}
+                        </a>
+                    </h3>
                 </div>
-            ` : ''}
-        </div>
 
-        <div class="project-footer">
-            <span class="project-updated">
-                Updated ${formatDate(repo.updated_at)}
-            </span>
-            <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="project-link">
-                View on GitHub
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-            </a>
-        </div>
-    `;
+                <p class="project-description">
+                    ${repo.description || '<em>No description available</em>'}
+                </p>
+
+                <div class="project-meta">
+                    ${repo.language ? `
+                        <div class="project-language">
+                            <span class="language-dot" style="background-color: ${langColor}"></span>
+                            ${repo.language}
+                        </div>
+                    ` : ''}
+                    
+                    ${repo.stargazers_count > 0 ? `
+                        <div class="project-stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg>
+                            ${repo.stargazers_count}
+                        </div>
+                    ` : ''}
+                    
+                    ${repo.forks_count > 0 ? `
+                        <div class="project-stat">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M5 3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm0 2.122a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878zm3.75 7.378a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm3-8.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"/>
+                            </svg>
+                            ${repo.forks_count}
+                        </div>
+                    ` : ''}
+                </div>
+
+                <div class="project-footer">
+                    <span class="project-updated">
+                        Updated ${formatDate(repo.updated_at)}
+                    </span>
+                    <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="project-link">
+                        View on GitHub
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        `;
+    }
 
     return card;
 }
