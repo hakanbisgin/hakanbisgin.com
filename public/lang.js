@@ -95,6 +95,27 @@ const translations = {
         'projects.technologies': 'Teknolojiler:',
         'projects.noResults': 'Proje bulunamadı',
         
+        // Static Projects
+        'projects.traffic.title': 'Trafik İşareti Tanıma (Bitirme Projesi)',
+        'projects.traffic.desc': 'OpenCV kullanarak trafik işaretlerini tespit eden ve tanıyan bir bilgisayarlı görü sistemi geliştirdim. Modeli eğitmek için XML formatında veri seti açıklamalarını yönettim.',
+        'projects.restaurant.title': 'Restoran Sipariş Yönetim Sistemi',
+        'projects.restaurant.desc': 'Restoran yönetimi için kapsamlı bir POS (Satış Noktası) sistemi tasarladım ve geliştirdim. Hem proje yöneticisi hem de baş geliştirici olarak ekip çalışmalarını koordine ettim ve temel özellikleri uyguladım.',
+        'projects.rental.title': 'Araç Kiralama Yönetim Sistemi',
+        'projects.rental.desc': 'Test Odaklı Geliştirme (TDD) yaklaşımını takip ederek kapsamlı bir kiralama yönetim uygulaması oluşturdum. Kod kalitesini ve güvenilirliğini sağlamak için JUnit kullanarak birim testleri uyguladım.',
+        'projects.portfolio.title': 'Kişisel Portfolio Web Sitesi',
+        'projects.portfolio.desc': 'Saf HTML, CSS ve JavaScript ile oluşturulmuş modern, responsive kişisel portfolio web sitesi. Çoklu dil desteği (Türkçe/İngilizce), dinamik içerik ve tüm cihazlar için optimize edilmiş koyu tema tasarımı içerir.',
+        'projects.network.title': 'Ağ ve Sistem Yönetimi',
+        'projects.network.desc': 'Ağ tasarımı, yapılandırma ve sorun giderme konusunda kapsamlı deneyim. Güvenlik duvarları, yönlendiriciler, yük dengeleyiciler ve VPN çözümleri dahil kurumsal düzeyde altyapı ile çalıştım. Linux sistem yönetimi ve otomasyonda yetkin.',
+        'projects.web.title': 'Web Geliştirme Projeleri',
+        'projects.web.desc': 'Modern framework\'ler ve teknolojiler kullanarak çeşitli web uygulamaları geliştirdim. MySQL veritabanları ile PHP/Laravel backend geliştirmede uzmanlaştım. Performans ve güvenliğe odaklanarak responsive, kullanıcı dostu arayüzler oluşturdum.',
+        'projects.viewLive': 'Canlı Görüntüle',
+        'projects.viewCode': 'Kodu Görüntüle',
+        'projects.skills.title': 'Teknik Yetenekler',
+        'projects.skills.languages': 'Programlama Dilleri',
+        'projects.skills.frameworks': 'Framework\'ler ve Araçlar',
+        'projects.skills.databases': 'Veritabanları',
+        'projects.skills.systems': 'Sistemler ve DevOps',
+        
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. Tüm hakları saklıdır.'
     },
@@ -192,6 +213,27 @@ const translations = {
         'projects.features': 'Features:',
         'projects.technologies': 'Technologies:',
         'projects.noResults': 'No projects found',
+        
+        // Static Projects
+        'projects.traffic.title': 'Traffic Sign Recognition (Thesis Project)',
+        'projects.traffic.desc': 'Developed a computer vision system to detect and recognize traffic signs using OpenCV. Managed dataset annotations using XML format for training the model.',
+        'projects.restaurant.title': 'Restaurant Order Management System',
+        'projects.restaurant.desc': 'Designed and developed a comprehensive POS (Point of Sale) system for restaurant management. Acted as both project manager and lead developer, coordinating team efforts and implementing core features.',
+        'projects.rental.title': 'Car Rental Management System',
+        'projects.rental.desc': 'Built a comprehensive rental management application following Test-Driven Development (TDD) approach. Implemented unit tests using JUnit to ensure code quality and reliability.',
+        'projects.portfolio.title': 'Personal Portfolio Website',
+        'projects.portfolio.desc': 'Modern, responsive personal portfolio website built with pure HTML, CSS, and JavaScript. Features multi-language support (Turkish/English), dynamic content, and dark theme design optimized for all devices.',
+        'projects.network.title': 'Network & System Administration',
+        'projects.network.desc': 'Extensive experience in network design, configuration, and troubleshooting. Worked with enterprise-level infrastructure including firewalls, routers, load balancers, and VPN solutions. Proficient in Linux system administration and automation.',
+        'projects.web.title': 'Web Development Projects',
+        'projects.web.desc': 'Developed various web applications using modern frameworks and technologies. Specialized in PHP/Laravel backend development with MySQL databases. Created responsive, user-friendly interfaces with focus on performance and security.',
+        'projects.viewLive': 'View Live',
+        'projects.viewCode': 'View Code',
+        'projects.skills.title': 'Technical Skills',
+        'projects.skills.languages': 'Languages',
+        'projects.skills.frameworks': 'Frameworks & Tools',
+        'projects.skills.databases': 'Databases',
+        'projects.skills.systems': 'Systems & DevOps',
         
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. All rights reserved.'
