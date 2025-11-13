@@ -11,10 +11,13 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">Hakan Bişgin</div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="resume.html" class="active">Özgeçmiş</a></li>
-            </ul>
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav.home">Anasayfa</a></li>
+                    <li><a href="resume.html" class="active" data-i18n="nav.resume">Özgeçmiş</a></li>
+                </ul>
+                <button id="lang-toggle" class="lang-toggle" title="Switch to English">EN</button>
+            </div>
         </div>
     </nav>
 
@@ -30,25 +33,25 @@
             <!-- Skills -->
             <div class="card">
                 <div class="card-header">
-                    <h2>Yetenekler</h2>
+                    <h2 data-i18n="resume.skills.title">Yetenekler</h2>
                 </div>
                 <div class="skills-section">
-                    <h3>Network</h3>
-                    <p>Network tasarımı (Firewall, Router, Load Balancer vb.)<br>
+                    <h3 data-i18n="resume.skills.network">Network</h3>
+                    <p data-i18n="resume.skills.network.content">Network tasarımı (Firewall, Router, Load Balancer vb.)<br>
                     MPLS ve VPN devreleri, IPSec ve Proxy cihazları<br>
                     TCP/IP protokol uygulamaları</p>
                 </div>
                 <div class="skills-section">
-                    <h3>Yazılım Geliştirme</h3>
-                    <p>Nesne Yönelimli Analiz ve Tasarım<br>
+                    <h3 data-i18n="resume.skills.development">Yazılım Geliştirme</h3>
+                    <p data-i18n="resume.skills.development.content">Nesne Yönelimli Analiz ve Tasarım<br>
                     PHP - Laravel<br>
                     MySQL<br>
                     Jenkins<br>
                     Selenium</p>
                 </div>
                 <div class="skills-section">
-                    <h3>Sistem Yönetimi</h3>
-                    <p>GNU Linux<br>
+                    <h3 data-i18n="resume.skills.sysadmin">Sistem Yönetimi</h3>
+                    <p data-i18n="resume.skills.sysadmin.content">GNU Linux<br>
                     VMWARE & ESXi<br>
                     Proxmox<br>
                     Bash scripting</p>
@@ -58,60 +61,42 @@
             <!-- Work Experience -->
             <div class="card card-full">
                 <div class="card-header">
-                    <h2>İş Deneyimi</h2>
+                    <h2 data-i18n="resume.experience.title">İş Deneyimi</h2>
                 </div>
                 
                 <div class="experience-item">
-                    <h3>TEKNİK DESTEK VE EĞİTİM UZMANI</h3>
-                    <p class="company">TAYFTECH - TAYF İLERİ TEKNOLOJİ HİZMETLERİ A.Ş.</p>
-                    <p class="period">03/2022 – 03/2024 (2 yıl)</p>
+                    <h3 data-i18n="resume.experience.job1.title">TEKNİK DESTEK VE EĞİTİM UZMANI</h3>
+                    <p class="company" data-i18n="resume.experience.job1.company">TAYFTECH - TAYF İLERİ TEKNOLOJİ HİZMETLERİ A.Ş.</p>
+                    <p class="period" data-i18n="resume.experience.job1.period">03/2022 – 03/2024 (2 yıl)</p>
                     <ul>
-                        <li>Ürünün yurt içi ve yurt dışı paydaşlara teknik sunumu</li>
-                        <li>Demo ve uygulama senaryoları üzerine paydaş eğitimleri</li>
-                        <li>Paydaşlar için sistem analizi</li>
-                        <li>Ürünün paydaşların kullandığı diğer teknolojilerle uyumluluğunun değerlendirilmesi</li>
-                        <li>Test süreçlerinin ve sonuçlarının raporlanması ve takibi</li>
-                        <li>Geleneksel WAN Hızlandırıcıları, kullanım metodolojileri ile yapılandırma</li>
-                        <li>Ürün iyileştirme/geliştirme önerileri ve takibi</li>
-                        <li>Ürünlerin test senaryoları için test durumlarının belirlenmesi</li>
-                        <li>Farklı ağ topolojileri ve kullanım senaryoları için ürün dağıtımı</li>
+                        <li data-i18n="resume.experience.job1.content">Ürünün yurt içi ve yurt dışı paydaşlara teknik sunumu</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
-                    <h3>BT UZMANI</h3>
-                    <p class="company">HARVEST ULUSLARARASI OKULLARI</p>
-                    <p class="period">11/10/2019 – 30/04/2022 (2 yıl 7 ay)</p>
+                    <h3 data-i18n="resume.experience.job2.title">BT UZMANI</h3>
+                    <p class="company" data-i18n="resume.experience.job2.company">HARVEST ULUSLARARASI OKULLARI</p>
+                    <p class="period" data-i18n="resume.experience.job2.period">11/10/2019 – 30/04/2022 (2 yıl 7 ay)</p>
                     <ul>
-                        <li>Ağ yönetimi (sorun giderme - yapılandırma - bakım)</li>
-                        <li>Donanım bakımı (Masaüstü - Dizüstü vb.)</li>
-                        <li>BT satın alma işlemleri (Yazılım çözümleri - Yeni cihazlar, bilgisayarlar vb.)</li>
-                        <li>Helpdesk (LMS Yazılımları - İşletim Sistemleri - Cihazlar - Windows Server 2012)</li>
+                        <li data-i18n="resume.experience.job2.content">Ağ yönetimi (sorun giderme - yapılandırma - bakım)</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
-                    <h3>YAZILIM TEST MÜHENDİSİ</h3>
-                    <p class="company">MENTORNITY BİLİŞİM A.Ş.</p>
-                    <p class="period">08/2018 – 10/2018 (Staj 3 ay)</p>
+                    <h3 data-i18n="resume.experience.job3.title">YAZILIM TEST MÜHENDİSİ</h3>
+                    <p class="company" data-i18n="resume.experience.job3.company">MENTORNITY BİLİŞİM A.Ş.</p>
+                    <p class="period" data-i18n="resume.experience.job3.period">08/2018 – 10/2018 (Staj 3 ay)</p>
                     <ul>
-                        <li>Kullanıcı hikayelerinin tanımlanması</li>
-                        <li>Kullanıcı hikayeleri için kabul kriterleri</li>
-                        <li>Manuel test</li>
-                        <li>Otomatik testler için test oluşturma</li>
-                        <li>Selenium, Cucumber ve Katalon Studio ile Web UI/UX testi</li>
-                        <li>Slack, Confluence ve Trello araçları ile çalışma</li>
+                        <li data-i18n="resume.experience.job3.content">Kullanıcı hikayelerinin tanımlanması</li>
                     </ul>
                 </div>
 
                 <div class="experience-item">
-                    <h3>İŞ ANALİSTİ</h3>
-                    <p class="company">İSTANBUL BEYLİKDÜZÜ BELEDİYESİ</p>
-                    <p class="period">08/2017 – 09/2017 (Staj 2 ay)</p>
+                    <h3 data-i18n="resume.experience.job4.title">İŞ ANALİSTİ</h3>
+                    <p class="company" data-i18n="resume.experience.job4.company">İSTANBUL BEYLİKDÜZÜ BELEDİYESİ</p>
+                    <p class="period" data-i18n="resume.experience.job4.period">08/2017 – 09/2017 (Staj 2 ay)</p>
                     <ul>
-                        <li>Sistem/iş analisti olarak çalışma</li>
-                        <li>Paydaşların ihtiyaçlarının belirlenmesi</li>
-                        <li>Kabul için yazılım testi</li>
+                        <li data-i18n="resume.experience.job4.content">Sistem/iş analisti olarak çalışma</li>
                     </ul>
                 </div>
             </div>
@@ -119,60 +104,60 @@
             <!-- Education -->
             <div class="card card-full">
                 <div class="card-header">
-                    <h2>Eğitim ve Sertifikalar</h2>
+                    <h2 data-i18n="resume.education.title">Eğitim ve Sertifikalar</h2>
                 </div>
                 
                 <div class="education-item">
-                    <h3>CompTIA Network+ (N10-008)</h3>
-                    <p class="company">Dion Training - Jason Dion</p>
-                    <p>Full Course & Practice Exam</p>
+                    <h3 data-i18n="resume.education.cert1.title">CompTIA Network+ (N10-008)</h3>
+                    <p class="company" data-i18n="resume.education.cert1.org">Dion Training - Jason Dion</p>
+                    <p data-i18n="resume.education.cert1.desc">Full Course & Practice Exam</p>
                 </div>
 
                 <div class="education-item">
-                    <h3>TCP/IP Expert Mechanics</h3>
-                    <p class="company">CSEPracticals - Abhishek</p>
-                    <p>Master Class</p>
+                    <h3 data-i18n="resume.education.cert2.title">TCP/IP Expert Mechanics</h3>
+                    <p class="company" data-i18n="resume.education.cert2.org">CSEPracticals - Abhishek</p>
+                    <p data-i18n="resume.education.cert2.desc">Master Class</p>
                 </div>
 
                 <div class="education-item">
-                    <h3>Bilgisayar Mühendisliği - Lisans</h3>
-                    <p class="company">Çanakkale Onsekiz Mart Üniversitesi</p>
-                    <p class="period">09/2013 – 02/2019</p>
-                    <p>Nesne Yönelimli Programlama, Nesne Yönelimli Analiz ve Tasarım, Web Sayfası Tasarımı ve Programlama, Veritabanı Yönetim Sistemleri, Çevik Yazılım Geliştirme, Linux ile Sistem Yönetimi</p>
+                    <h3 data-i18n="resume.education.degree.title">Bilgisayar Mühendisliği - Lisans</h3>
+                    <p class="company" data-i18n="resume.education.degree.school">Çanakkale Onsekiz Mart Üniversitesi</p>
+                    <p class="period" data-i18n="resume.education.degree.period">09/2013 – 02/2019</p>
+                    <p data-i18n="resume.education.degree.courses">Nesne Yönelimli Programlama, Nesne Yönelimli Analiz ve Tasarım, Web Sayfası Tasarımı ve Programlama, Veritabanı Yönetim Sistemleri, Çevik Yazılım Geliştirme, Linux ile Sistem Yönetimi</p>
                 </div>
             </div>
 
             <!-- Projects -->
             <div class="card card-full">
                 <div class="card-header">
-                    <h2>Projeler</h2>
+                    <h2 data-i18n="resume.projects.title">Projeler</h2>
                 </div>
                 
                 <div class="project-item">
-                    <h3>Trafik İşareti Tanıma (Bitirme Tezi)</h3>
-                    <p class="period">2018</p>
-                    <p><strong>Teknolojiler:</strong> Python, OpenCV, XML, Computer Vision</p>
+                    <h3 data-i18n="resume.projects.project1.title">Trafik İşareti Tanıma (Bitirme Tezi)</h3>
+                    <p class="period" data-i18n="resume.projects.project1.period">2018</p>
+                    <p data-i18n="resume.projects.project1.tech"><strong>Teknolojiler:</strong> Python, OpenCV, XML, Computer Vision</p>
                 </div>
 
                 <div class="project-item">
-                    <h3>Restoran Sipariş Yönetim Sistemi</h3>
-                    <p class="period">2017</p>
-                    <p><strong>Rol:</strong> Proje Yöneticisi & Geliştirici</p>
-                    <p><strong>Teknolojiler:</strong> Java, MySQL</p>
+                    <h3 data-i18n="resume.projects.project2.title">Restoran Sipariş Yönetim Sistemi</h3>
+                    <p class="period" data-i18n="resume.projects.project2.period">2017</p>
+                    <p data-i18n="resume.projects.project2.role"><strong>Rol:</strong> Proje Yöneticisi & Geliştirici</p>
+                    <p data-i18n="resume.projects.project2.tech"><strong>Teknolojiler:</strong> Java, MySQL</p>
                 </div>
 
                 <div class="project-item">
-                    <h3>Araç Kiralama Yönetim Sistemi</h3>
-                    <p class="period">2015</p>
-                    <p><strong>Rol:</strong> Geliştirici</p>
-                    <p><strong>Teknolojiler:</strong> Java, MySQL, TDD (JUNIT)</p>
+                    <h3 data-i18n="resume.projects.project3.title">Araç Kiralama Yönetim Sistemi</h3>
+                    <p class="period" data-i18n="resume.projects.project3.period">2015</p>
+                    <p data-i18n="resume.projects.project3.role"><strong>Rol:</strong> Geliştirici</p>
+                    <p data-i18n="resume.projects.project3.tech"><strong>Teknolojiler:</strong> Java, MySQL, TDD (JUNIT)</p>
                 </div>
             </div>
 
             <!-- Contact -->
             <div class="card card-full">
                 <div class="card-header">
-                    <h2>İletişim</h2>
+                    <h2 data-i18n="resume.contact.title">İletişim</h2>
                 </div>
                 <div class="contact-links">
                     <a href="https://www.linkedin.com/in/hakan-bi%C5%9Fgin-184368138/">
@@ -200,8 +185,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Hakan Bişgin. Tüm hakları saklıdır.</p>
+            <p data-i18n="footer.copyright">&copy; 2024 Hakan Bişgin. Tüm hakları saklıdır.</p>
         </div>
     </footer>
+    
+    <script src="lang.js"></script>
 </body>
 </html>
