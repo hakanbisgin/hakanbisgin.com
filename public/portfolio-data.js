@@ -1,5 +1,130 @@
 // Featured projects with detailed information
 const portfolioProjects = {
+    'live-feeds-monitoring': {
+        title: 'Live Feeds Monitoring Dashboard',
+        titleTr: 'Canlı Yayın İzleme Paneli',
+        description: 'Real-time broadcast monitoring dashboard for tracking multiple live feeds simultaneously. Features include stream health monitoring, alert system, and comprehensive logging capabilities.',
+        descriptionTr: 'Birden fazla canlı yayını eşzamanlı izlemek için gerçek zamanlı yayın izleme paneli. Akış sağlığı izleme, uyarı sistemi ve kapsamlı kayıt özellikleri içerir.',
+        image: 'https://via.placeholder.com/800x450/1a1a2e/035dd7?text=Live+Feeds+Dashboard',
+        tags: ['JavaScript', 'WebSocket', 'Real-time', 'Monitoring'],
+        tagsTr: ['JavaScript', 'WebSocket', 'Gerçek Zamanlı', 'İzleme'],
+        features: [
+            'Real-time stream monitoring',
+            'Multi-feed support',
+            'Alert notifications',
+            'Health status tracking',
+            'Comprehensive logging'
+        ],
+        featuresTr: [
+            'Gerçek zamanlı akış izleme',
+            'Çoklu yayın desteği',
+            'Uyarı bildirimleri',
+            'Sağlık durumu takibi',
+            'Kapsamlı kayıt tutma'
+        ],
+        technologies: ['JavaScript', 'WebSocket', 'Node.js', 'Real-time APIs']
+    },
+    
+    'automated-trading-bot': {
+        title: 'Automated Trading Bot',
+        titleTr: 'Otomatik Trading Botu',
+        description: 'Sophisticated cryptocurrency trading bot with multiple strategies, risk management, and real-time market analysis. Implements frequency-based pool investment algorithms for optimized trading decisions.',
+        descriptionTr: 'Çoklu strateji, risk yönetimi ve gerçek zamanlı piyasa analizi içeren gelişmiş kripto para trading botu. Optimize edilmiş trading kararları için frekans tabanlı havuz yatırım algoritmaları uygular.',
+        image: 'https://via.placeholder.com/800x450/1a1a2e/0eb24e?text=Trading+Bot',
+        tags: ['Python', 'Trading', 'Algorithms', 'Cryptocurrency'],
+        tagsTr: ['Python', 'Trading', 'Algoritmalar', 'Kripto Para'],
+        features: [
+            'Multiple trading strategies',
+            'Risk management system',
+            'Real-time market analysis',
+            'Automated execution',
+            'Performance tracking'
+        ],
+        featuresTr: [
+            'Çoklu trading stratejileri',
+            'Risk yönetim sistemi',
+            'Gerçek zamanlı piyasa analizi',
+            'Otomatik işlem gerçekleştirme',
+            'Performans takibi'
+        ],
+        technologies: ['Python', 'Trading APIs', 'Data Analysis', 'Algorithms']
+    },
+    
+    'fast-logo-detection': {
+        title: 'Fast Logo Detection System',
+        titleTr: 'Hızlı Logo Tespit Sistemi',
+        description: 'Real-time logo detection and recognition system for broadcast monitoring. Detects and tracks logos in video streams with high accuracy and minimal latency using computer vision techniques.',
+        descriptionTr: 'Yayın izleme için gerçek zamanlı logo tespit ve tanıma sistemi. Bilgisayarlı görü teknikleri kullanarak video akışlarında logoları yüksek doğruluk ve minimum gecikme ile tespit eder ve takip eder.',
+        image: 'https://via.placeholder.com/800x450/1a1a2e/6561ac?text=Logo+Detection',
+        tags: ['Python', 'OpenCV', 'Deep Learning', 'Computer Vision'],
+        tagsTr: ['Python', 'OpenCV', 'Derin Öğrenme', 'Bilgisayarlı Görü'],
+        features: [
+            'Real-time logo detection',
+            'High accuracy recognition',
+            'Low latency processing',
+            'Multiple logo tracking',
+            'Video stream integration'
+        ],
+        featuresTr: [
+            'Gerçek zamanlı logo tespiti',
+            'Yüksek doğruluk tanıma',
+            'Düşük gecikmeli işleme',
+            'Çoklu logo takibi',
+            'Video akış entegrasyonu'
+        ],
+        technologies: ['Python', 'OpenCV', 'Deep Learning', 'CUDA']
+    },
+    
+    'template-matching-cuda': {
+        title: 'Template Matching on Video (CUDA)',
+        titleTr: 'Video Üzerinde Template Matching (CUDA)',
+        description: 'High-performance video template matching system utilizing CUDA for GPU acceleration. Capable of real-time pattern detection in video streams with optimized performance.',
+        descriptionTr: 'GPU hızlandırma için CUDA kullanan yüksek performanslı video template matching sistemi. Optimize edilmiş performansla video akışlarında gerçek zamanlı desen tespiti yapabilir.',
+        image: 'https://via.placeholder.com/800x450/1a1a2e/cd004b?text=CUDA+Template+Matching',
+        tags: ['Python', 'CUDA', 'GPU', 'Video Processing'],
+        tagsTr: ['Python', 'CUDA', 'GPU', 'Video İşleme'],
+        features: [
+            'GPU-accelerated processing',
+            'Real-time template matching',
+            'High-performance video analysis',
+            'CUDA optimization',
+            'Parallel processing'
+        ],
+        featuresTr: [
+            'GPU hızlandırmalı işleme',
+            'Gerçek zamanlı şablon eşleştirme',
+            'Yüksek performanslı video analizi',
+            'CUDA optimizasyonu',
+            'Paralel işleme'
+        ],
+        technologies: ['Python', 'CUDA', 'OpenCV', 'GPU Computing']
+    },
+    
+    'system-helper-automation': {
+        title: 'System Helper & Automation Suite',
+        titleTr: 'Sistem Yardımcısı ve Otomasyon Paketi',
+        description: 'Collection of system administration and automation tools. Includes file management, system monitoring, backup automation, and various utility scripts for daily operations.',
+        descriptionTr: 'Sistem yönetimi ve otomasyon araçları koleksiyonu. Dosya yönetimi, sistem izleme, yedekleme otomasyonu ve günlük operasyonlar için çeşitli yardımcı scriptler içerir.',
+        image: 'https://via.placeholder.com/800x450/1a1a2e/f37023?text=System+Automation',
+        tags: ['Python', 'PowerShell', 'Automation', 'System Admin'],
+        tagsTr: ['Python', 'PowerShell', 'Otomasyon', 'Sistem Yönetimi'],
+        features: [
+            'File management automation',
+            'System monitoring tools',
+            'Backup automation',
+            'Task scheduling',
+            'Utility scripts collection'
+        ],
+        featuresTr: [
+            'Dosya yönetimi otomasyonu',
+            'Sistem izleme araçları',
+            'Yedekleme otomasyonu',
+            'Görev zamanlama',
+            'Yardımcı script koleksiyonu'
+        ],
+        technologies: ['Python', 'PowerShell', 'Bash', 'System APIs']
+    },
+    
     'hakanbisgin.com': {
         title: 'Personal Portfolio Website',
         titleTr: 'Kişisel Portfolio Web Sitesi',
