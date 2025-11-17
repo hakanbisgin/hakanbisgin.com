@@ -197,6 +197,8 @@ main {
 
 .card-large {
     grid-column: span 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-full {
@@ -1851,4 +1853,119 @@ footer {
     .card + .card {
         margin-top: 0.5rem;
     }
+}
+
+/* Featured Projects List */
+.featured-projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.featured-project-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.featured-project-item:hover {
+    background: rgba(3, 93, 215, 0.1);
+    border-color: var(--accent-primary);
+    transform: translateX(5px);
+}
+
+.project-emoji {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.project-tags-mini {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project-tags-mini span {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Skills Overview */
+.skills-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex: 1;
+}
+
+.skill-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: rgba(3, 93, 215, 0.1);
+    border-color: var(--accent-primary);
+    transform: translateY(-3px);
+}
+
+.skill-icon {
+    font-size: 2rem;
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* View All Projects/Details Link */
+.view-all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.view-all-projects:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(3, 93, 215, 0.3);
 }
