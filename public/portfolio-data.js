@@ -147,7 +147,7 @@ const portfolioProjects = {
             'Koyu tema',
             'SEO optimize'
         ],
-        demo: 'https://hakanbisgin.com',
+        demo: 'https://hakanbisgin.online',
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'GitHub API']
     },
     

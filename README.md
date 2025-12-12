@@ -118,7 +118,7 @@ Site tüm cihazlarda mükemmel görünür:
 
 ## 📞 İletişim
 
-- 📧 Email: hakanbisgin95@gmail.com
+- 📧 Email: wire@hakanbisgin.online
 - 💼 LinkedIn: [Hakan Bişgin](https://www.linkedin.com/in/hakan-bi%C5%9Fgin-184368138/)
 - 🐙 GitHub: [hakanbisgin](https://github.com/hakanbisgin)
 - 🐦 Twitter: [@HakanBSGN1](https://twitter.com/HakanBSGN1)
