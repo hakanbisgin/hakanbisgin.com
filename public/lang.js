@@ -204,6 +204,33 @@ const translations = {
         'projects.iptracker.title': 'IP Takip ve Ağ İzleyici',
         'projects.iptracker.desc': 'IP adreslerini takip etmek, ağ trafiğini analiz etmek ve bağlantı durumunu izlemek için ağ izleme aracı. Ağ aktiviteleri hakkında detaylı bilgi sağlar.',
         
+        // Project Dates
+        'projects.date.livefeeds': 'Kasım 2025',
+        'projects.date.tradingbot': 'Kasım 2025 - Aralık 2025',
+        'projects.date.template': 'Aralık 2024 - Mayıs 2025',
+        'projects.date.logodetect': 'Mayıs 2025 - Ağustos 2025',
+        'projects.date.systemhelper': 'Temmuz 2025 - Ağustos 2025',
+        'projects.date.portfolio': 'Ağustos 2024 - Aralık 2025',
+        'projects.date.cnbclog': 'Ekim 2024 - Kasım 2025',
+        'projects.date.videoanalyzer': 'Ocak 2025 - Ocak 2025',
+        'projects.date.quickpanel': 'Ocak 2025 - Ocak 2025',
+        'projects.date.cnbcdash': 'Aralık 2024 - Kasım 2025',
+        'projects.date.iptracker': 'Temmuz 2025 - Ekim 2025',
+        'projects.date.hotel': 'Eylül 2015 - Şubat 2016',
+        'projects.date.restaurant': 'Şubat 2019 - Ağustos 2019',
+        'projects.date.workflow': 'Temmuz 2025 - Ağustos 2025',
+        'projects.date.guestcoord': 'Haziran 2025 - Eylül 2025',
+        
+        // New Projects
+        'projects.hotel.title': 'Otel Rezervasyon Yazılımı',
+        'projects.hotel.desc': 'Otel odalarının online rezervasyon, müsaitlik ve müşteri yönetimini sağlayan web tabanlı bir rezervasyon sistemi.',
+        'projects.restaurant.title': 'Lokanta Sipariş Sistemi',
+        'projects.restaurant.desc': 'Restoranlar için masa bazlı sipariş alma, mutfak yönetimi ve sipariş takibini sağlayan bir sistem.',
+        'projects.workflow.title': 'İş Akış Raporlama Uygulaması',
+        'projects.workflow.desc': 'Şirket içi süreçlerin raporlanması, izlenmesi ve performans ölçümü için iş akışlarını analiz eden ve raporlayan bir uygulama.',
+        'projects.guestcoord.title': 'Konuk Koordinasyon Sitesi',
+        'projects.guestcoord.desc': 'Etkinlik ve organizasyonlarda konukların davet, kayıt ve koordinasyon süreçlerini yöneten web tabanlı bir platform.',
+        
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. Tüm hakları saklıdır.'
     },
@@ -410,6 +437,33 @@ const translations = {
         'projects.systemhelper.desc': 'Collection of system administration and automation tools. Includes file management, system monitoring, backup automation, and various utility scripts for daily operations.',
         'projects.iptracker.title': 'IP Tracker & Network Monitor',
         'projects.iptracker.desc': 'Network monitoring tool for tracking IP addresses, analyzing network traffic, and monitoring connection status. Provides detailed information about network activities.',
+        
+        // Project Dates
+        'projects.date.livefeeds': 'November 2025',
+        'projects.date.tradingbot': 'November 2025 - December 2025',
+        'projects.date.template': 'December 2024 - May 2025',
+        'projects.date.logodetect': 'May 2025 - August 2025',
+        'projects.date.systemhelper': 'July 2025 - August 2025',
+        'projects.date.portfolio': 'August 2024 - December 2025',
+        'projects.date.cnbclog': 'October 2024 - November 2025',
+        'projects.date.videoanalyzer': 'January 2025 - January 2025',
+        'projects.date.quickpanel': 'January 2025 - January 2025',
+        'projects.date.cnbcdash': 'December 2024 - November 2025',
+        'projects.date.iptracker': 'July 2025 - October 2025',
+        'projects.date.hotel': 'September 2015 - February 2016',
+        'projects.date.restaurant': 'February 2019 - August 2019',
+        'projects.date.workflow': 'July 2025 - August 2025',
+        'projects.date.guestcoord': 'June 2025 - September 2025',
+        
+        // New Projects
+        'projects.hotel.title': 'Hotel Reservation Software',
+        'projects.hotel.desc': 'Web-based reservation system providing online booking, room availability, and customer management for hotels.',
+        'projects.restaurant.title': 'Restaurant Order System',
+        'projects.restaurant.desc': 'System providing table-based order management, kitchen operations, and order tracking for restaurants.',
+        'projects.workflow.title': 'Business Workflow Reporting Application',
+        'projects.workflow.desc': 'Application analyzing and reporting business workflows for internal process reporting, monitoring, and performance measurement.',
+        'projects.guestcoord.title': 'Guest Coordination Website',
+        'projects.guestcoord.desc': 'Web-based platform managing guest invitation, registration, and coordination processes for events and organizations.',
         
         // Footer
         'footer.copyright': '© 2024 Hakan Bişgin. All rights reserved.'
