@@ -224,9 +224,12 @@ const translations = {
         'projects.date.restaurant': 'Şubat 2019 - Ağustos 2019',
         'projects.date.workflow': 'Temmuz 2025 - Ağustos 2025',
         'projects.date.guestcoord': 'Haziran 2025 - Eylül 2025',
+        'projects.date.rental': 'Şubat 2015 - Haziran 2015',
         
         // New Projects
         'projects.hotel.title': 'Otel Rezervasyon Yazılımı',
+        'projects.rental.title': 'Araç Kiralama Yönetim Sistemi',
+        'projects.rental.desc': 'Rent-a-car işletmeleri için kapsamlı araç kiralama yönetim sistemi. Rezervasyon, müşteri ve araç kayıtlarının takibini sağlayan yapılandırılmış ve bakımı kolay bir backend mimarisi.',
         'projects.hotel.desc': 'Otel odalarının online rezervasyon, müsaitlik ve müşteri yönetimini sağlayan web tabanlı bir rezervasyon sistemi.',
         'projects.restaurant.title': 'Lokanta Sipariş Sistemi',
         'projects.restaurant.desc': 'Restoranlar için masa bazlı sipariş alma, mutfak yönetimi ve sipariş takibini sağlayan bir sistem.',
@@ -462,9 +465,12 @@ const translations = {
         'projects.date.restaurant': 'February 2019 - August 2019',
         'projects.date.workflow': 'July 2025 - August 2025',
         'projects.date.guestcoord': 'June 2025 - September 2025',
+        'projects.date.rental': 'February 2015 - June 2015',
         
         // New Projects
         'projects.hotel.title': 'Hotel Reservation Software',
+        'projects.rental.title': 'Vehicle Rental Management System',
+        'projects.rental.desc': 'Comprehensive vehicle rental management system designed for rent-a-car businesses. Enables efficient tracking of reservations, customer and vehicle records, providing a structured and maintainable backend architecture.',
         'projects.hotel.desc': 'Web-based reservation system providing online booking, room availability, and customer management for hotels.',
         'projects.restaurant.title': 'Restaurant Order System',
         'projects.restaurant.desc': 'System providing table-based order management, kitchen operations, and order tracking for restaurants.',
