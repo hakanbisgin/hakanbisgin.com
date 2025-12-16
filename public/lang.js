@@ -204,6 +204,10 @@ const translations = {
         'projects.iptracker.title': 'IP Takip ve Ağ İzleyici',
         'projects.iptracker.desc': 'IP adreslerini takip etmek, ağ trafiğini analiz etmek ve bağlantı durumunu izlemek için ağ izleme aracı. Ağ aktiviteleri hakkında detaylı bilgi sağlar.',
         
+        // Project Labels
+        'projects.label.technologies': 'Teknolojiler:',
+        'projects.label.role': 'Rol:',
+        
         // Project Dates
         'projects.date.livefeeds': 'Kasım 2025',
         'projects.date.tradingbot': 'Kasım 2025 - Aralık 2025',
@@ -216,7 +220,7 @@ const translations = {
         'projects.date.quickpanel': 'Ocak 2025 - Ocak 2025',
         'projects.date.cnbcdash': 'Aralık 2024 - Kasım 2025',
         'projects.date.iptracker': 'Temmuz 2025 - Ekim 2025',
-        'projects.date.hotel': 'Eylül 2015 - Şubat 2016',
+        'projects.date.hotel': 'Ekim 2015 - Şubat 2016',
         'projects.date.restaurant': 'Şubat 2019 - Ağustos 2019',
         'projects.date.workflow': 'Temmuz 2025 - Ağustos 2025',
         'projects.date.guestcoord': 'Haziran 2025 - Eylül 2025',
@@ -437,6 +441,10 @@ const translations = {
         'projects.systemhelper.desc': 'Collection of system administration and automation tools. Includes file management, system monitoring, backup automation, and various utility scripts for daily operations.',
         'projects.iptracker.title': 'IP Tracker & Network Monitor',
         'projects.iptracker.desc': 'Network monitoring tool for tracking IP addresses, analyzing network traffic, and monitoring connection status. Provides detailed information about network activities.',
+        
+        // Project Labels
+        'projects.label.technologies': 'Technologies:',
+        'projects.label.role': 'Role:',
         
         // Project Dates
         'projects.date.livefeeds': 'November 2025',
